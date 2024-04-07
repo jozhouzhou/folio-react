@@ -7,8 +7,8 @@ export default function Home() {
         <div class="container px-5 py-24 mx-auto">
           
           <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
-            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Jo designs and resolves</h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">A UI designer and coordinator based in Melbourne.</p>
           </div>
 
 
@@ -21,7 +21,7 @@ export default function Home() {
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Native App Design</h2>
                 <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
@@ -35,7 +35,7 @@ export default function Home() {
                     <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                   </svg>
                 </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Responsive Web Design</h2>
                 <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
@@ -48,14 +48,14 @@ export default function Home() {
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                 </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Website Redesign</h2>
                 <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
               </div>
             </div>
 
           </div>
           <a href='/projects'>
-          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" >Button</button>
+          <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" >View More</button>
           </a>
         </div>
       </section>
