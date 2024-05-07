@@ -22,7 +22,7 @@ export default function Home() {
   );
 }
 
-export function Hero() {
+function Hero() {
   return (
     <div className="flex flex-col items-center mb-16 px-20">
 
@@ -39,7 +39,7 @@ export function Hero() {
   );
 }
 
-export function HeroMockups() {
+function HeroMockups() {
   return (
 
     <div className="flex flex-row justify-center space-x-10 px-20 mb-36 *:w-1/5">
@@ -54,7 +54,7 @@ export function HeroMockups() {
   )
 }
 
-export function HeroMockupsOld() {
+function HeroMockupsOld() {
   return (
     <div className="flex flex-row h-auto space-x-10 px-20 mb-36 *:rounded-3xl *:overflow-hidden">
 
@@ -70,7 +70,7 @@ export function HeroMockupsOld() {
   )
 }
 
-export function SkillList() {
+function SkillList() {
   return (
     <div className="flex flex-col px-20 items-center mb-36">
 
@@ -91,7 +91,7 @@ export function SkillList() {
   );
 }
 
-export function ProjectList() {
+function ProjectList() {
   return (
     <div className="flex flex-col px-20 items-center mb-36">
 
@@ -108,7 +108,7 @@ export function ProjectList() {
   );
 }
 
-export function WorkHistory() {
+function WorkHistory() {
   return (
     <div className="flex flex-col px-20 items-center mb-36">
 

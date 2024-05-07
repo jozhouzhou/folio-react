@@ -20,12 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="cyberpunk" lang="en">
+    <html lang="en">
       <body className={inter.className}>
 
         <div className="px-16">
 
-            <NavBar />
+            <NavMenu />
   
           	{children}
         
@@ -38,9 +38,7 @@ export default function RootLayout({
   );
 }
 
-export function NavBar() {
-  	
-
+function NavMenu() {
 	return (
 		
     	<div className="flex flex-row justify-between py-6 font-bold">
@@ -73,7 +71,7 @@ export function NavBar() {
   	);
 }
 
-export function Footer() {
+function Footer() {
   return (
     <div className="flex flex-col px-16 py-16 bg-footer text-white">
 
