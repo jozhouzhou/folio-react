@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Alegreya_Sans } from "next/font/google";
 import "./globals.css";
-import "./nav.css";
 import SocialMediaIcon from "./components/SocialMediaIcon";
 
 const inter = Alegreya_Sans({
@@ -23,10 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
 
-        <div className="px-16">
+	  	<NavMenu />
 
-            <NavMenu />
-  
+        <div className="mx-16">
+
           	{children}
         
         </div>
@@ -41,10 +40,10 @@ export default function RootLayout({
 function NavMenu() {
 	return (
 		
-    	<div className="flex flex-row justify-between py-6 font-bold">
+    	<div className="flex flex-row justify-between mx-36 my-6 font-bold">
 
 			{/* Logo */}
-			<a href="/" className="flex items-center rounded-full hover:bg-hover duration-200 px-6 py-2 cursor-pointer">
+			<a href="/" className="flex items-center cursor-pointer">
 				<div className="flex flex-row items-center space-x-4">
 					<img src="/logo.svg" className="max-h-8 max-w-8 rounded-full" alt="" />
 					<h1 className="font-bold text-3xl">Jo Zhou</h1>
@@ -52,19 +51,9 @@ function NavMenu() {
 			</a>
 
 			{/* Nav Links */}
-			<div className="grid grid-cols-3 items-center gap-x-4 text-md *:text-center *:rounded-full *:uppercase *:px-2 *:py-2 *:duration-200 *:cursor-pointer">
-
-				<a href="/" className="hover:bg-hover">Home</a>
-				<a href="/portfolio" className="hover:bg-hover">Portfolio</a>
-				<a className="hover:bg-hoverResume hover:text-primary arrow-parent px-4 border-2 border-black">
-					<div className="flex flex-row items-center space-x-2">
-						<p>View Resume</p>
-						<svg className="text-black animate-arrow overflow-hidden" width="15" height="15" viewBox="0 0 15 15">
-							<path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-						</svg>
-					</div>
-				</a>
-
+			<div className="flex flex-row items-center gap-x-4 text-md *:text-center *:rounded-full *:uppercase *:px-4 *:py-2 *:duration-200 *:cursor-pointer">
+				<a href="/portfolio" className="border border-primary border-opacity-10 hover:bg-primary hover:bg-opacity-10">Projects</a>
+				<a href="/resume" className="bg-primary text-white border border-primary hover:bg-white hover:text-primary">View Resume</a>
 			</div>
 
 		</div>
