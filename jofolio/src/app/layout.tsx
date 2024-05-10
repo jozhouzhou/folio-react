@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Alegreya_Sans } from "next/font/google";
+import * as React from "react";
+import {Providers} from "./providers";
+
 import "./globals.css";
 import SocialMediaIcon from "./components/SocialMediaIcon";
 
@@ -13,28 +16,25 @@ export const metadata: Metadata = {
   description: "A hand-crafted website using React and Tailwind",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
 
-	  	<NavMenu />
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  	return (
+		<html lang="en">
+			<body className={inter.className}>
+				<Providers>
+					<NavMenu />
 
-        <div className="mx-16">
+					<div className="mx-16">
 
-          	{children}
-        
-        </div>
+						{children}
+					
+					</div>
 
-        <Footer />
-
-        </body>
-    </html>
-  );
+					<Footer />
+				</Providers>
+			</body>
+		</html>
+  	);
 }
 
 function NavMenu() {

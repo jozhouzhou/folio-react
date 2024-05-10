@@ -1,42 +1,133 @@
+'use client'
 import Image from "next/image";
+import {Tabs, Tab, Card, CardBody, CardHeader} from "@nextui-org/react";
+
 import LandingSkillCard from "./components/LandingSkillCard";
 import LandingProjectCard from "./components/LandingProjectCard";
 import LandingHistoryCard from "./components/LandingHistoryCard";
 
 
+
+
+
 export default function Home() {
-  return (
-    <main className="py-12">
+	return (
+		<main className="py-12">
 
-      <Hero />
-      
-      <HeroMockups />
+		<Hero />
 
-      <SkillList />
+    	<SkillList />
 
-      <ProjectList />
+		<ProjectShowcase />
+		
+		<HeroMockups />
 
-      <WorkHistory />
+		<ProjectList />
 
-    </main>
-  );
-}
+		<WorkHistory />
+
+		</main>
+	);
+	}
 
 function Hero() {
-  return (
-    <div className="flex flex-col items-center mb-16 px-20">
+	return (
+		<div className="flex flex-col items-center mb-36 px-20">
 
-      <h1 className="text-center text-5xl font-black uppercase pb-12">
-        <span className="text-primary">I&apos;m Jo,</span> who spends time on researching, designing and resolving products.  
-      </h1>
+		<h1 className="text-center text-5xl font-black uppercase pb-12">
+			Research, <span className="text-primary">Design</span> and Resolve. 
+		</h1>
 
-      <div className="flex flex-row w-full items-center justify-center space-x-12 font-semibold text-xl *:duration-200">
-        <button className="rounded-full w-1/3 shadow-md py-2 uppercase border border-black hover:bg-gray-100 hover:text-primary">My Experience</button>
-        <button className="rounded-full w-1/3 shadow-md py-2 uppercase text-white bg-primary hover:bg-primaryHover">Let&apos;s Chat</button>
-      </div>
+		<div className="flex flex-row w-full items-center justify-center space-x-12 font-semibold text-xl *:duration-200">
+			<button className="rounded-full w-1/3 shadow-md py-2 uppercase border border-black hover:bg-gray-100 hover:text-primary">My Experience</button>
+			<button className="rounded-full w-1/3 shadow-md py-2 uppercase text-white bg-primary hover:bg-primaryHover">Let&apos;s Chat</button>
+		</div>
 
-    </div>
-  );
+		</div>
+	);
+}
+
+function ProjectShowcase() {
+	
+	let tabs = [
+		{
+			id: "atoms",
+			label: "Atoms",
+			content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		{
+			id: "molecules",
+			label: "Molecules",
+			content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			id: "organisms",
+			label: "Organisms",
+			content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			id: "wireframing",
+			label: "Wireframing",
+			content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			id: "prototyping",
+			label: "Prototyping",
+			content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			id: "native-app",
+			label: "Native App",
+			content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			id: "website",
+			label: "Website",
+			content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		},
+		{
+			id: "app-redesign",
+			label: "App Redesign",
+			content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		}
+	];
+  
+  	return (
+
+		<div className="flex flex-col w-3/4 mx-auto mb-16">
+          <Tabs 
+            items={tabs} 
+            color="primary" 
+            size="lg" 
+            radius="full" 
+            fullWidth={true}
+            classNames={{
+              tabList: "bg-opacity-0",
+              tab: "hover:bg-primary hover:bg-opacity-10",
+              tabContent: "font-bold text-black px-1 text-lg",
+              cursor: "bg-primary",
+            }}
+          >
+            {(item) => (
+              <Tab 
+                key={item.id} 
+                title={item.label} 
+                className="w-full"
+                
+              >
+                <Card className="w-full h-96 shadow-none border border-primary rounded-3xl py-6 px-4">
+                  <CardBody className="text-center">
+                    {item.content}
+                  </CardBody>
+                </Card>  
+              </Tab>
+            )}
+          </Tabs>
+        </div>  
+
+		
+
+	);
 }
 
 function HeroMockups() {
@@ -44,29 +135,13 @@ function HeroMockups() {
 
     <div className="flex flex-row justify-center space-x-10 px-20 mb-36 *:w-1/5">
 
-      <img className="object-fill"  src="/hero-mockup3.png" alt="" />
-      <img className="object-fill"  src="/hero-mockup3.png" alt="" />
-      <img className="object-fill"  src="/hero-mockup3.png" alt="" />
-      <img className="object-fill"  src="/hero-mockup3.png" alt="" />
+		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
+		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
+		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
+		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
       
     </div>
 
-  )
-}
-
-function HeroMockupsOld() {
-  return (
-    <div className="flex flex-row h-auto space-x-10 px-20 mb-36 *:rounded-3xl *:overflow-hidden">
-
-      <div className="w-1/3">
-        <img className="object-fill"  src="/hero-mockup1.png" alt="" />
-      </div>
-
-      <div className="w-2/3 bg-gray-800">
-        <img className="object-fill"  src="/hero-mockup2.png" alt="" />
-      </div>
-      
-    </div>
   )
 }
 
