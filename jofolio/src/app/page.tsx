@@ -15,10 +15,6 @@ export default function Home() {
     	<SkillList />
 
 		<ProjectShowcase />
-		
-		<HeroMockups />
-
-		<ProjectList />
 
 		<WorkHistory />
 
@@ -113,7 +109,7 @@ function ProjectShowcase() {
   
   	return (
 
-		<div className="flex flex-col px-20 items-center mb-36">
+		<div className="flex flex-col px-20 items-center mb-8">
 			
 			<h2 className="pb-12 text-5xl font-black uppercase">
 				<span className="text-secondary">Jo&apos;s</span> Projects
@@ -149,92 +145,60 @@ function ProjectShowcase() {
 	);
 }
 
-function HeroMockups() {
-  return (
-
-    <div className="flex flex-row justify-center space-x-10 px-20 mb-36 *:w-1/5">
-
-		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
-		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
-		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
-		<img className="object-fill"  src="/hero-mockup3.png" alt="" />
-      
-    </div>
-
-  )
-}
-
-
-
-function ProjectList() {
-  return (
-    <div className="flex flex-col px-20 items-center mb-36">
-
-      <h2 className="pb-20 text-5xl font-black uppercase"><span className="text-primary">Jo&apos;s</span> Projects</h2>
-
-      <div className="grid grid-cols-2 content-evenly w-full gap-16">
-        
-        <LandingProjectCard projectNumber={0}/>
-        <LandingProjectCard projectNumber={1}/>
-
-      </div>
-
-    </div>
-  );
-}
-
 function WorkHistory() {
   return (
     <div className="flex flex-col px-20 items-center mb-36">
 
-      <h2 className="pb-20 text-5xl font-black uppercase">My History</h2>
+		<h2 className="pb-12 text-5xl font-black uppercase">
+			<span className="text-secondary">Jo&apos;s</span> History
+		</h2>
 
-      <div className="space-y-6 *:w-full *:bg-opacity-5 *:border-l-4 *:rounded-r-2xl *:px-6">
+		<div className="space-y-6 *:w-full *:bg-opacity-5 *:border-l-4 *:rounded-r-2xl *:px-6">
 
-        {/* Work History Section */}
-        <div className="flex flex-col pt-4 border-primary bg-primary">
-          
-          <div className="">
-            <h3 className="uppercase text-xl font-bold">Work Experience</h3>
-          </div>
+			{/* Work History Section */}
+			<div className="flex flex-col pt-4 border-primary bg-primary">
+			
+			<div className="">
+				<h3 className="uppercase text-xl font-bold">Work Experience</h3>
+			</div>
 
-          <LandingHistoryCard workHistoryNumber={0} />
-          <div className="border-b border-primary border-opacity-10"></div>
-          <LandingHistoryCard workHistoryNumber={0} />
-          <div className="border-b border-primary border-opacity-10"></div>
-          <LandingHistoryCard workHistoryNumber={0} />
+			<LandingHistoryCard workHistoryNumber={0} />
+			<div className="border-b border-primary border-opacity-10"></div>
+			<LandingHistoryCard workHistoryNumber={0} />
+			<div className="border-b border-primary border-opacity-10"></div>
+			<LandingHistoryCard workHistoryNumber={0} />
 
-        </div>
-        
-        {/* Education Section */}
-        <div className="flex flex-col py-4 border-secondary bg-secondary">
-          
-          <h3 className="uppercase text-xl font-bold pb-2">Education</h3>
+			</div>
+			
+			{/* Education Section */}
+			<div className="flex flex-col py-4 border-secondary bg-secondary">
+			
+			<h3 className="uppercase text-xl font-bold pb-2">Education</h3>
 
-          <h4 className="text-lg font-bold">Master of Communication and Media Studies, Monash University</h4>
-          <p className="text-md text-gray-500 pb-4">2016 - 2017</p>
+			<h4 className="text-lg font-bold">Master of Communication and Media Studies, Monash University</h4>
+			<p className="text-md text-gray-500 pb-4">2016 - 2017</p>
 
-          <h4 className="text-lg font-bold">UX/UI & Frontend Development Bootcamp, Monash University</h4>
-          <p className="text-md text-gray-500">2021 - 2022</p>
+			<h4 className="text-lg font-bold">UX/UI & Frontend Development Bootcamp, Monash University</h4>
+			<p className="text-md text-gray-500">2021 - 2022</p>
 
-        </div>
+			</div>
 
-        {/* Skills Section */}
-        <div className="flex flex-col py-4 border-tertiary bg-tertiary">
-            
-          <h3 className="uppercase text-xl font-bold pb-2">Skills</h3>
+			{/* Skills Section */}
+			<div className="flex flex-col py-4 border-tertiary bg-tertiary">
+				
+			<h3 className="uppercase text-xl font-bold pb-2">Skills</h3>
 
-          <div className="flex flex-row flex-wrap space-x-4 *:rounded-full *:bg-white *:px-6 *:py-2">
-            <div>Figma Prototyping</div>
-            <div>Project Coordination</div>
-            <div>Design Critique</div>
-            <div>Design Conceptualisation & Presentation</div>
-            <div>Stakeholder Communication</div>
-          </div>
+			<div className="flex flex-row flex-wrap space-x-4 *:rounded-full *:bg-white *:px-6 *:py-2">
+				<div>Figma Prototyping</div>
+				<div>Project Coordination</div>
+				<div>Design Critique</div>
+				<div>Design Conceptualisation & Presentation</div>
+				<div>Stakeholder Communication</div>
+			</div>
 
-        </div>
+			</div>
 
-      </div>
+		</div>
 
     </div>
   );
