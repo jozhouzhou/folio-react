@@ -113,39 +113,39 @@ function ProjectShowcase() {
   
   	return (
 
-		<div className="flex flex-col w-3/4 mx-auto mb-16">
-          <Tabs 
-            items={tabs} 
-            color="primary" 
-            size="lg" 
-            radius="full" 
-            fullWidth={true}
-            classNames={{
-              tabList: "bg-opacity-0",
-              tab: "hover:bg-primary hover:bg-opacity-10",
-              tabContent: "font-bold text-primaryText px-1 text-lg",
-              cursor: "bg-primary",
-            }}
-          >
-            {(item) => (
-              <Tab 
-                key={item.id} 
-                title={item.label} 
-                className="w-full"
-                
-              >
-                <Card className="w-full h-96 shadow-none border border-primary rounded-3xl py-6 px-4">
-                  <CardBody className="text-center">
-                    {item.content}
-                  </CardBody>
-                </Card>  
-              </Tab>
-            )}
-          </Tabs>
-        </div>  
-
+		<div className="flex flex-col px-20 items-center mb-36">
+			
+			<h2 className="pb-12 text-5xl font-black uppercase">
+				<span className="text-secondary">Jo&apos;s</span> Projects
+			</h2>
 		
-
+			<div className="flex flex-col w-full mx-auto mb-16">
+				<Tabs 
+					items={tabs} 
+					color="primary" 
+					size="lg" 
+					radius="full" 
+					fullWidth={true}
+					classNames={{
+						tabList: "bg-opacity-0",
+						tab: "hover:bg-primary hover:bg-opacity-10",
+						tabContent: "font-bold text-primaryText px-1 text-lg",
+						cursor: "bg-primary",
+					}}
+				>
+					{(item) => (
+					<Tab key={item.id} title={item.label}>
+						<Card className="h-[35rem] shadow-none border-2 border-primary rounded-3xl py-6 px-4">
+						<CardBody className="text-center">
+							<h1 className="text-5xl font-black">Great Things To Come!!!</h1><br /><br />
+							{item.content}
+						</CardBody>
+						</Card>  
+					</Tab>
+					)}
+				</Tabs>
+			</div>  
+		</div>
 	);
 }
 
