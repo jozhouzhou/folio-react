@@ -38,12 +38,33 @@ function Hero() {
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
-				<img className="object-fill object-left"  src="/hero-mockup3.png" alt="" />
+				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
 			</div>
 			
 		</div>
 	);
 }
+
+function SkillList() {
+	return (
+	  <div className="flex flex-col px-20 items-center mb-36">
+  
+		<h2 className="pb-20 text-5xl font-black uppercase">Explore <span className="text-secondary">Jo&apos;s</span> Offerings to You</h2>
+  
+		<div className="grid grid-cols-3 content-evenly w-full gap-16">
+		  
+		  <LandingSkillCard skillNumber={0}/>
+		  <LandingSkillCard skillNumber={1}/>
+		  <LandingSkillCard skillNumber={2}/>
+		  <LandingSkillCard skillNumber={3}/>
+		  <LandingSkillCard skillNumber={4}/>
+		  <LandingSkillCard skillNumber={5}/>
+  
+		</div>
+  
+	  </div>
+	);
+}	
 
 function ProjectShowcase() {
 	
@@ -102,7 +123,7 @@ function ProjectShowcase() {
             classNames={{
               tabList: "bg-opacity-0",
               tab: "hover:bg-primary hover:bg-opacity-10",
-              tabContent: "font-bold text-[#353633] px-1 text-lg",
+              tabContent: "font-bold text-primaryText px-1 text-lg",
               cursor: "bg-primary",
             }}
           >
@@ -143,26 +164,7 @@ function HeroMockups() {
   )
 }
 
-function SkillList() {
-  return (
-    <div className="flex flex-col px-20 items-center mb-36">
 
-      <h2 className="pb-20 text-5xl font-black uppercase">Explore <span className="text-primary">Jo&apos;s</span> Offerings to You</h2>
-
-      <div className="grid grid-cols-3 content-evenly w-full gap-16">
-        
-        <LandingSkillCard skillNumber={0}/>
-        <LandingSkillCard skillNumber={1}/>
-        <LandingSkillCard skillNumber={2}/>
-        <LandingSkillCard skillNumber={3}/>
-        <LandingSkillCard skillNumber={4}/>
-        <LandingSkillCard skillNumber={5}/>
-
-      </div>
-
-    </div>
-  );
-}
 
 function ProjectList() {
   return (
