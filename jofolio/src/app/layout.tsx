@@ -22,15 +22,17 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 		<html lang="en">
 			<body className={inter.className}>
 				<Providers>
+					
 					<NavMenu />
 
 					<div className="mx-16">
 
 						{children}
-					
+
 					</div>
 
 					<Footer />
+				
 				</Providers>
 			</body>
 		</html>
@@ -46,13 +48,13 @@ function NavMenu() {
 			<a href="/" className="flex items-center cursor-pointer">
 				<div className="flex flex-row items-center space-x-4">
 					<img src="/logo.svg" className="max-h-8 max-w-8 rounded-full" alt="" />
-					<h1 className="font-bold text-3xl">Jo Zhou</h1>
+					<h1 className="font-bold text-3xl uppercase">Jo Zhou</h1>
 				</div>
 			</a>
 
 			{/* Nav Links */}
 			<div className="flex flex-row items-center gap-x-4 text-md *:text-center *:rounded-full *:uppercase *:px-4 *:py-2 *:duration-200 *:cursor-pointer">
-				<a href="/portfolio" className="border border-primary border-opacity-10 hover:bg-primary hover:bg-opacity-10">Projects</a>
+				<a href="/portfolio" className="border-black border-opacity-0 hover:bg-primary hover:bg-opacity-10">Projects</a>
 				<a href="/resume" className="bg-primary text-white border border-primary hover:bg-white hover:text-primary">View Resume</a>
 			</div>
 

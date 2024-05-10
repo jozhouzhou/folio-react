@@ -6,10 +6,6 @@ import LandingSkillCard from "./components/LandingSkillCard";
 import LandingProjectCard from "./components/LandingProjectCard";
 import LandingHistoryCard from "./components/LandingHistoryCard";
 
-
-
-
-
 export default function Home() {
 	return (
 		<main className="py-12">
@@ -28,7 +24,7 @@ export default function Home() {
 
 		</main>
 	);
-	}
+}
 
 function Hero() {
 	return (
