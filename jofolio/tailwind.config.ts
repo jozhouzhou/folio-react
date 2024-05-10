@@ -18,8 +18,10 @@ const config: Config = {
       },
       colors: {
         primary: '#1263aa',
-        secondary: '#e94c55',
+        secondary: '#bccad2',
         tertiary: '#fedc66',
+        quarternary: '#e94c55',
+        primaryText: '#353633',
         primaryHover: '#0c4576',
         hover: '#70a1cc',
         hoverResume: '#111827',
