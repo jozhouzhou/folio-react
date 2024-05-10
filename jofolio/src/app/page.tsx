@@ -28,17 +28,19 @@ export default function Home() {
 
 function Hero() {
 	return (
-		<div className="flex flex-col items-center mb-36 px-20">
+		<div className="flex flex-row justify-center items-center space-x-12 mb-36 mx-20">
 
-		<h1 className="text-center text-5xl font-black uppercase pb-12">
-			Research, <span className="text-primary">Design</span> and Resolve. 
-		</h1>
+			<h1 className="w-5/12 text-center text-5xl font-black uppercase">
+				Research, <span className="text-primary">Design</span><br />and Resolve 
+			</h1>
 
-		<div className="flex flex-row w-full items-center justify-center space-x-12 font-semibold text-xl *:duration-200">
-			<button className="rounded-full w-1/3 shadow-md py-2 uppercase border border-black hover:bg-gray-100 hover:text-primary">My Experience</button>
-			<button className="rounded-full w-1/3 shadow-md py-2 uppercase text-white bg-primary hover:bg-primaryHover">Let&apos;s Chat</button>
-		</div>
-
+			<div className="w-7/12 flex flex-row h-72 space-x-8 overflow-hidden">
+				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
+				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
+				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
+				<img className="object-fill object-left"  src="/hero-mockup3.png" alt="" />
+			</div>
+			
 		</div>
 	);
 }
@@ -100,7 +102,7 @@ function ProjectShowcase() {
             classNames={{
               tabList: "bg-opacity-0",
               tab: "hover:bg-primary hover:bg-opacity-10",
-              tabContent: "font-bold text-black px-1 text-lg",
+              tabContent: "font-bold text-[#353633] px-1 text-lg",
               cursor: "bg-primary",
             }}
           >
