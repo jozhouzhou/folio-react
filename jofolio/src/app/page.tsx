@@ -147,7 +147,7 @@ function ProjectShowcase() {
 
 function WorkHistory() {
   return (
-    <div className="flex flex-col px-20 items-center mb-36">
+    <div className="flex flex-col px-20 items-center">
 
 		<h2 className="pb-12 text-5xl font-black uppercase">
 			<span className="text-highlight">Jo&apos;s</span> History
@@ -186,15 +186,15 @@ function WorkHistory() {
 			{/* Skills Section */}
 			<div className="flex flex-col py-4 border-primary bg-primary">
 				
-			<h3 className="uppercase text-xl font-bold pb-2">Skills</h3>
+				<h3 className="uppercase text-xl font-bold pb-2">Skills</h3>
 
-			<div className="flex flex-row flex-wrap space-x-4 *:rounded-full *:bg-white *:px-6 *:py-2">
-				<div>Figma Prototyping</div>
-				<div>Project Coordination</div>
-				<div>Design Critique</div>
-				<div>Design Conceptualisation & Presentation</div>
-				<div>Stakeholder Communication</div>
-			</div>
+				<div className="flex flex-row flex-wrap space-x-4 *:rounded-full *:bg-white *:px-6 *:py-2">
+					<div>Figma Prototyping</div>
+					<div>Project Coordination</div>
+					<div>Design Critique</div>
+					<div>Design Conceptualisation & Presentation</div>
+					<div>Stakeholder Communication</div>
+				</div>
 
 			</div>
 

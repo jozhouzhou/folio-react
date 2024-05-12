@@ -64,34 +64,44 @@ function NavMenu() {
 
 function Footer() {
   return (
-    <div className="flex flex-col px-16 py-16 bg-footer text-white">
-
-      {/* Footer Logo */}
-      <a href="/">
-		<div className="flex flex-row items-center space-x-4 pb-8 cursor-pointer">
-			<img src="/logo.svg" alt="" className="w-12 h-12 rounded-full"/>
-			<span className="text-3xl font-bold">Jo Zhou</span>
+    <div className="flex flex-col">
+		
+		<div className="flex justify-center mb-12">
+			<a href="/resume" className="text-center rounded-full uppercase px-32 py-2 duration-200 cursor-pointer 
+				bg-primary text-white border border-primary hover:bg-white hover:text-primary">
+				View Resume
+			</a>
 		</div>
-	  </a>
-      
-      {/* Description & Links */}
-      <div className="flex flex-row justify-between border-b border-gray-700 pb-8">
-        <div className="w-2/5 text-sm text-gray-400">
-          	<p>I&apos;m Jo, a User Experience Designer with 3+ years of experience. Passionate about crafting intuitive digital solutions.</p>
-        </div>
-        <div className="flex flex-row space-x-2">
-			<SocialMediaIcon platform={0} />
-			<SocialMediaIcon platform={1} />
-			<SocialMediaIcon platform={2} />
-			<SocialMediaIcon platform={3} />
-			<SocialMediaIcon platform={4} />
-			<SocialMediaIcon platform={5} />
-        </div>
-      </div>
+		 
+		<div className="flex flex-col px-16 py-16 bg-footer text-white">
 
-      {/* Copyright */}
-      <p className="text-sm text-gray-400 pt-8">&copy;2024 All Rights Reserved by Jo Zhou</p>
-        
+		{/* Footer Logo */}
+		<a href="/">
+			<div className="flex flex-row items-center space-x-4 pb-8 cursor-pointer">
+				<img src="/logo.svg" alt="" className="w-12 h-12 rounded-full"/>
+				<span className="text-3xl font-bold">Jo Zhou</span>
+			</div>
+		</a>
+		
+		{/* Description & Links */}
+		<div className="flex flex-row justify-between border-b border-gray-700 pb-8">
+			<div className="w-2/5 text-sm text-gray-400">
+				<p>I&apos;m Jo, a User Experience Designer with 3+ years of experience. Passionate about crafting intuitive digital solutions.</p>
+			</div>
+			<div className="flex flex-row space-x-2">
+				<SocialMediaIcon platform={0} />
+				<SocialMediaIcon platform={1} />
+				<SocialMediaIcon platform={2} />
+				<SocialMediaIcon platform={3} />
+				<SocialMediaIcon platform={4} />
+				<SocialMediaIcon platform={5} />
+			</div>
+		</div>
+
+		{/* Copyright */}
+		<p className="text-sm text-gray-400 pt-8">&copy;2024 All Rights Reserved by Jo Zhou</p>
+	  	</div>
+
     </div>
   );
 }
