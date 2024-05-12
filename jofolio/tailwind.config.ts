@@ -17,15 +17,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primary: '#1263aa',
-        secondary: '#bccad2',
-        tertiary: '#fedc66',
-        quarternary: '#e94c55',
+        primary: '#466dff',
+        secondaryRed: '#E94C55',
+        secondaryYellow: '#fedc66',
+        highlight: '#bccad2',
         primaryText: '#353633',
         primaryHover: '#0c4576',
         hover: '#70a1cc',
         hoverResume: '#111827',
-        highlight: '#a7f3d0',
+        
         footer: '#18181b',
       }
     },

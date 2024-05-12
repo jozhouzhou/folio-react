@@ -27,7 +27,7 @@ function Hero() {
 		<div className="flex flex-row justify-center items-center space-x-12 mb-36 mx-20">
 
 			<h1 className="w-5/12 text-center text-5xl font-black uppercase">
-				Research, <span className="text-primary">Design</span><br />and Resolve 
+				Research, Design<br />and Resolve 
 			</h1>
 
 			<div className="w-7/12 flex flex-row h-72 space-x-8 overflow-hidden">
@@ -45,7 +45,7 @@ function SkillList() {
 	return (
 	  <div className="flex flex-col px-20 items-center mb-36">
   
-		<h2 className="pb-20 text-5xl font-black uppercase">Explore <span className="text-secondary">Jo&apos;s</span> Offerings to You</h2>
+		<h2 className="pb-20 text-5xl font-black uppercase">Explore <span className="text-highlight">Jo&apos;s</span> Offerings to You</h2>
   
 		<div className="grid grid-cols-3 content-evenly w-full gap-16">
 		  
@@ -112,7 +112,7 @@ function ProjectShowcase() {
 		<div className="flex flex-col px-20 items-center mb-8">
 			
 			<h2 className="pb-12 text-5xl font-black uppercase">
-				<span className="text-secondary">Jo&apos;s</span> Projects
+				<span className="text-highlight">Jo&apos;s</span> Projects
 			</h2>
 		
 			<div className="flex flex-col w-full mx-auto mb-16">
@@ -125,8 +125,8 @@ function ProjectShowcase() {
 					classNames={{
 						tabList: "bg-opacity-0",
 						tab: "hover:bg-primary hover:bg-opacity-10",
-						tabContent: "font-bold text-primaryText px-1 text-lg",
-						cursor: "bg-primary",
+						tabContent: "font-bold text-primaryText px-1 text-lg group-data-[selected=true]:text-primaryText",
+						cursor: "bg-secondaryYellow",
 					}}
 				>
 					{(item) => (
@@ -150,7 +150,7 @@ function WorkHistory() {
     <div className="flex flex-col px-20 items-center mb-36">
 
 		<h2 className="pb-12 text-5xl font-black uppercase">
-			<span className="text-secondary">Jo&apos;s</span> History
+			<span className="text-highlight">Jo&apos;s</span> History
 		</h2>
 
 		<div className="space-y-6 *:w-full *:bg-opacity-5 *:border-l-4 *:rounded-r-2xl *:px-6">
@@ -171,7 +171,7 @@ function WorkHistory() {
 			</div>
 			
 			{/* Education Section */}
-			<div className="flex flex-col py-4 border-secondary bg-secondary">
+			<div className="flex flex-col py-4 border-primary bg-primary">
 			
 			<h3 className="uppercase text-xl font-bold pb-2">Education</h3>
 
@@ -184,7 +184,7 @@ function WorkHistory() {
 			</div>
 
 			{/* Skills Section */}
-			<div className="flex flex-col py-4 border-tertiary bg-tertiary">
+			<div className="flex flex-col py-4 border-primary bg-primary">
 				
 			<h3 className="uppercase text-xl font-bold pb-2">Skills</h3>
 
