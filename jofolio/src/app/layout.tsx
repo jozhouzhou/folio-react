@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+"use client"
+
 import { Alegreya_Sans } from "next/font/google";
 import * as React from "react";
+import { useState } from 'react';
 import {Providers} from "./providers";
 
 import "./globals.css";
@@ -11,12 +13,6 @@ const inter = Alegreya_Sans({
 	weight: ['400', '700', '800']
 });
 
-export const metadata: Metadata = {
-  title: "Jo Zhou",
-  description: "A hand-crafted website using React and Tailwind",
-};
-
-
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   	return (
 		<html lang="en">
@@ -25,7 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 					
 					<NavMenu />
 
-					<div className="mx-16">
+					<div className="mx-4 md:mx-16">
 
 						{children}
 
@@ -40,24 +36,59 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 }
 
 function NavMenu() {
+
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleClick = () => {
+		
+		setIsOpen(!isOpen);
+		console.log("isOpen:", !isOpen);
+	};
+	
 	return (
 		
-    	<div className="flex flex-row justify-between mx-36 my-6 font-bold">
+		<div className="flex flex-col justify-center">
+			<div className="flex flex-row items-center mx-4 md:mx-16 lg:mx-36 my-6 font-bold justify-between">
 
-			{/* Logo */}
-			<a href="/" className="flex items-center cursor-pointer">
-				<div className="flex flex-row items-center space-x-4">
-					<img src="/logo.svg" className="max-h-8 max-w-8 rounded-full" alt="" />
-					<h1 className="font-bold text-3xl uppercase">Jo Zhou</h1>
+				{/* Logo */}
+				<a href="/" className="flex items-center cursor-pointer">
+					<div className="flex flex-row items-center space-x-2 sm:space-x-4">
+						<img src="/logo.svg" className="max-h-8 max-w-8 rounded-full" alt="" />
+						<h1 className="font-bold text-xl sm:text-3xl uppercase text-nowrap">Jo Zhou</h1>
+					</div>
+				</a>
+
+				{/* Nav Links */}
+				<div className="hidden md:flex md:flex-row items-center gap-x-4 text-md *:text-center *:rounded-full *:uppercase *:px-4 *:py-2 *:duration-200 *:cursor-pointer">
+					<a href="/portfolio" className="border-black border-opacity-0 hover:bg-primary hover:bg-opacity-10">Projects</a>
+					<a href="/resume" className="bg-primary text-white border border-primary hover:bg-white hover:text-primary">View Resume</a>
 				</div>
-			</a>
 
-			{/* Nav Links */}
-			<div className="flex flex-row items-center gap-x-4 text-md *:text-center *:rounded-full *:uppercase *:px-4 *:py-2 *:duration-200 *:cursor-pointer">
-				<a href="/portfolio" className="border-black border-opacity-0 hover:bg-primary hover:bg-opacity-10">Projects</a>
-				<a href="/resume" className="bg-primary text-white border border-primary hover:bg-white hover:text-primary">View Resume</a>
+				{/* Burger Bar (Mobile only) */}
+				<button
+					onClick={handleClick}
+					className="md:hidden flex flex-col justify-center items-center *:bg-primary *:block *:transition-all
+						*:duration-300 *:ease-out *:h-0.5 *:w-6">
+
+					<span className={`${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+					<span className={`my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+					<span className={`${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+				</button>
+
 			</div>
 
+			{/* Burger Bar Menu */}
+			<div
+				className={`flex flex-col w-full shadow-md shadow-b rounded-md transition-all duration-500 ease-out
+					${!isOpen ? 'h-0 opacity-0' : 'h-32'}`}>
+
+				<div className="flex flex-col items-center my-auto space-y-1 text-md py-4 *:text-center *:rounded-full *:uppercase *:w-44 *:py-2 *:duration-200 *:cursor-pointer">
+					<a href="/portfolio" className="border-black border-opacity-0 hover:bg-primary hover:bg-opacity-10">Projects</a>
+					<a href="/resume" className="bg-primary text-white border border-primary hover:bg-white hover:text-primary">View Resume</a>
+				</div>
+
+			</div>
+			
 		</div>
   	);
 }
