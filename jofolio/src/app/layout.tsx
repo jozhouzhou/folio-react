@@ -42,7 +42,6 @@ function NavMenu() {
 	const handleClick = () => {
 		
 		setIsOpen(!isOpen);
-		console.log("isOpen:", !isOpen);
 	};
 	
 	return (
@@ -79,7 +78,7 @@ function NavMenu() {
 
 			{/* Burger Bar Menu */}
 			<div
-				className={`flex flex-col w-full shadow-md shadow-b rounded-md transition-all duration-500 ease-out
+				className={`overflow-hidden flex flex-col w-full shadow-md shadow-b rounded-md transition-all duration-500 ease-out
 					${!isOpen ? 'h-0 opacity-0' : 'h-32'}`}>
 
 				<div className="flex flex-col items-center my-auto space-y-1 text-md py-4 *:text-center *:rounded-full *:uppercase *:w-44 *:py-2 *:duration-200 *:cursor-pointer">
