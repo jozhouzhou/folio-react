@@ -8,15 +8,15 @@ import LandingHistoryCard from "./components/LandingHistoryCard";
 
 export default function Home() {
 	return (
-		<main className="py-12">
+		<main className="py-12 bg-red-200">
 
-		<Hero />
+			<Hero />
 
-    	<SkillList />
+			<SkillList />
 
-		<ProjectShowcase />
+			<ProjectShowcase />
 
-		<WorkHistory />
+			<WorkHistory />
 
 		</main>
 	);
@@ -24,13 +24,13 @@ export default function Home() {
 
 function Hero() {
 	return (
-		<div className="flex flex-row justify-center items-center space-x-12 mb-36 mx-20">
+		<div className="flex flex-col justify-center items-center mb-12 md:flex-row md:space-x-12 md:mb-36 md:mx-20">
 
-			<h1 className="w-5/12 text-center text-5xl font-black uppercase">
+			<h1 className="w-full md:w-5/12 text-center pb-4 text-3xl md:text-4xl md:pb-0 lg:text-5xl font-black uppercase bg-blue-200">
 				Research, Design<br />and Resolve 
 			</h1>
 
-			<div className="w-7/12 flex flex-row h-72 space-x-8 overflow-hidden">
+			<div className="bg-red-300 w-full flex flex-row h-24 space-x-4 justify-center md:justify-start md:w-7/12 md:h-72 md:space-x-8 overflow-hidden">
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
