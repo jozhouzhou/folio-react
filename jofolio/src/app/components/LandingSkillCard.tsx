@@ -48,7 +48,7 @@ export default function LandingSkillCard({ skillNumber }: LandingSkillCardProps)
 	return (
         <div className="flex flex-col rounded-r-xl items-center text-center bg-primary bg-opacity-5 border-l-4 border-primary px-6 py-2 md:py-4 lg:rounded-r-3xl xl:py-10">
           	
-			<div className="flex w-1/5 aspect-square mb-1 mx-auto items-center justify-center p-2 md:mb-0 md:p-5 lg:p-0 lg:mb-2 xl:mb-6">
+			<div className="flex w-1/5 aspect-square mb-1 mx-auto items-center justify-center p-2 md:mb-0 md:p-6 lg:p-0 lg:mb-2 xl:mb-6">
 				<svg viewBox={skillData[skillNumber].viewbox} className="fill-primary">
 					<path d={skillData[skillNumber].icon} />
 				</svg>
