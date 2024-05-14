@@ -47,7 +47,7 @@ function NavMenu() {
 	return (
 		
 		<div className="flex flex-col justify-center">
-			<div className="flex flex-row items-center mx-4 md:mx-16 lg:mx-36 my-6 font-bold justify-between">
+			<div className="flex flex-row items-center mx-4 my-4 md:mx-16 lg:mx-36 lg:my-6 font-bold justify-between">
 
 				{/* Logo */}
 				<a href="/" className="flex items-center cursor-pointer">
@@ -79,9 +79,9 @@ function NavMenu() {
 			{/* Burger Bar Menu */}
 			<div
 				className={`overflow-hidden flex flex-col w-full shadow-md shadow-b rounded-md transition-all duration-500 ease-out
-					${!isOpen ? 'h-0 opacity-0' : 'h-32'}`}>
+					${!isOpen ? 'h-0 opacity-0 mb-0' : 'h-20 mb-2'}`}>
 
-				<div className="flex flex-col items-center my-auto space-y-1 text-md py-4 *:text-center *:rounded-full *:uppercase *:w-44 *:py-2 *:duration-200 *:cursor-pointer">
+				<div className="flex flex-col items-center space-y-1 text-sm font-bold *:text-center *:rounded-full *:uppercase *:px-4 *:py-1.5 *:duration-200 *:cursor-pointer">
 					<a href="/portfolio" className="border-black border-opacity-0 hover:bg-primary hover:bg-opacity-10">Projects</a>
 					<a href="/resume" className="bg-primary text-white border border-primary hover:bg-white hover:text-primary">View Resume</a>
 				</div>
