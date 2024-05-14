@@ -8,7 +8,7 @@ import LandingHistoryCard from "./components/LandingHistoryCard";
 
 export default function Home() {
 	return (
-		<main className="py-6 lg:py-12 bg-red-200">
+		<main className="py-1 md:py-6 lg:py-12">
 
 			<Hero />
 
@@ -24,7 +24,7 @@ export default function Home() {
 
 function Hero() {
 	return (
-		<div className="flex flex-col lg:flex-row justify-center items-center mb-6 md:mb-12 lg:space-x-6 lg:mb-20 xl:space-x-12 xl:mb-28 xl:mx-20">
+		<div className="flex flex-col lg:flex-row justify-center items-center mb-8 md:mb-12 lg:space-x-6 lg:mb-20 xl:space-x-12 xl:mb-28 xl:mx-20">
 
 			<h1 className="w-full lg:w-7/12 xl:w-5/12 text-center pb-4 text-2xl md:text-4xl md:pb-8 lg:text-5xl font-black uppercase">
 				Research, Design<br />and Resolve 
@@ -43,7 +43,7 @@ function Hero() {
 
 function SkillList() {
 	return (
-		<div className="flex flex-col items-center mb-6 mx-8 md:mx-20 md:mb-12 lg:mb-20 xl:mb-28">
+		<div className="flex flex-col items-center mb-8 mx-8 md:mx-20 md:mb-12 lg:mb-20 xl:mb-28">
 	
 			<h2 className="pb-4 font-black uppercase text-nowrap text-2xl md:text-4xl md:pb-8 lg:text-5xl lg:pb-12 xl:pb-20">Explore <span className="text-highlight">Jo&apos;s</span> Offerings</h2>
 	
