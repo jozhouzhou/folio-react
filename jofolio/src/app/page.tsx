@@ -45,7 +45,7 @@ function SkillList() {
 	return (
 		<div className="flex flex-col items-center mb-8 mx-8 md:mx-20 md:mb-12 lg:mb-20 xl:mb-28">
 	
-			<h2 className="pb-4 font-black uppercase text-nowrap text-2xl md:text-4xl md:pb-8 lg:text-5xl lg:pb-12 xl:pb-20">Explore <span className="text-highlight">Jo&apos;s</span> Offerings</h2>
+			<h2 className="pb-4 font-black uppercase text-nowrap text-2xl md:text-4xl lg:text-5xl md:pb-8 lg:pb-12 xl:pb-20">Explore <span className="text-highlight">Jo&apos;s</span> Offerings</h2>
 	
 			<div className="grid grid-cols-1 lg:grid-cols-3 content-evenly w-full gap-2 md:gap-4 lg:gap-y-8 lg:gap-x-6 xl:gap-16">
 			
@@ -108,14 +108,13 @@ function ProjectShowcase() {
 	];
   
   	return (
-
-		<div className="flex flex-col px-20 items-center mb-8">
+		<div className="flex flex-col items-center px-2 mb-8 md:mb-12 lg:mb-20 xl:mb-28">
 			
-			<h2 className="pb-12 text-5xl font-black uppercase">
+			<h2 className="pb-4 font-black uppercase text-2xl md:text-4xl lg:text-5xl md:pb-8 lg:pb-12 xl:pb-20">
 				<span className="text-highlight">Jo&apos;s</span> Projects
 			</h2>
 		
-			<div className="flex flex-col w-full mx-auto mb-16">
+			<div className="flex flex-col w-full mx-auto">
 				<Tabs 
 					items={tabs} 
 					color="primary" 
@@ -125,16 +124,16 @@ function ProjectShowcase() {
 					classNames={{
 						tabList: "bg-opacity-0",
 						tab: "hover:bg-primary hover:bg-opacity-10",
-						tabContent: "font-bold text-primaryText px-1 text-lg group-data-[selected=true]:text-primaryText",
+						tabContent: "font-bold text-primaryText md:px-1 text-sm md:text-lg lg:text-xl group-data-[selected=true]:text-primaryText",
 						cursor: "bg-secondaryYellow",
 					}}
 				>
 					{(item) => (
 					<Tab key={item.id} title={item.label}>
-						<Card className="h-[35rem] shadow-none border-2 border-primary rounded-3xl py-6 px-4">
+						<Card className="h-[28rem] md:h-[35rem] shadow-none border-2 border-primary rounded-3xl py-2 px-2 md:py-6 md:px-4">
 						<CardBody className="text-center">
-							<h1 className="text-5xl font-black">Great Things To Come!!!</h1><br /><br />
-							{item.content}
+							<h1 className="text-xl md:text-4xl lg:text-5xl font-black">Great Things To Come!!!</h1><br />
+							<span className="text-sm md:text-lg">{item.content}</span>
 						</CardBody>
 						</Card>  
 					</Tab>
