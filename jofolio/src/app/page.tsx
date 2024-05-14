@@ -108,7 +108,7 @@ function ProjectShowcase() {
 	];
   
   	return (
-		<div className="flex flex-col items-center px-2 mb-8 md:mb-12 lg:mb-20 xl:mb-28">
+		<div className="flex flex-col items-center px-2 lg:px-20 mb-8 md:mb-12 lg:mb-20 xl:mb-28">
 			
 			<h2 className="pb-4 font-black uppercase text-2xl md:text-4xl lg:text-5xl md:pb-8 lg:pb-12 xl:pb-20">
 				<span className="text-highlight">Jo&apos;s</span> Projects
@@ -131,10 +131,10 @@ function ProjectShowcase() {
 					{(item) => (
 					<Tab key={item.id} title={item.label}>
 						<Card className="h-[28rem] md:h-[35rem] shadow-none border-2 border-primary rounded-3xl py-2 px-2 md:py-6 md:px-4">
-						<CardBody className="text-center">
-							<h1 className="text-xl md:text-4xl lg:text-5xl font-black">Great Things To Come!!!</h1><br />
-							<span className="text-sm md:text-lg">{item.content}</span>
-						</CardBody>
+							<CardBody className="text-center">
+								<h1 className="text-xl md:text-4xl lg:text-5xl font-black">Great Things To Come!!!</h1><br />
+								<span className="text-sm md:text-lg">{item.content}</span>
+							</CardBody>
 						</Card>  
 					</Tab>
 					)}
@@ -146,48 +146,49 @@ function ProjectShowcase() {
 
 function WorkHistory() {
   return (
-    <div className="flex flex-col px-20 items-center">
+    <div className="flex flex-col px-4 lg:px-20 items-center mb-8 md:mb-12 lg:mb-20 xl:mb-28">
 
-		<h2 className="pb-12 text-5xl font-black uppercase">
+		<h2 className="pb-4 font-black uppercase text-2xl md:text-4xl lg:text-5xl md:pb-8 lg:pb-12 xl:pb-20">
 			<span className="text-highlight">Jo&apos;s</span> History
 		</h2>
 
-		<div className="space-y-6 *:w-full *:bg-opacity-5 *:border-l-4 *:rounded-r-2xl *:px-6">
+		<div className="space-y-6 *:bg-opacity-5 *:border-l-4 *:rounded-r-2xl *:px-6">
 
 			{/* Work History Section */}
 			<div className="flex flex-col pt-4 border-primary bg-primary">
 			
-			<div className="">
-				<h3 className="uppercase text-xl font-bold">Work Experience</h3>
-			</div>
+				<div className="">
+					<h3 className="uppercase -mb-3 lg:mb-0 text-md md:text-xl font-bold">Work Experience</h3>
+				</div>
 
-			<LandingHistoryCard workHistoryNumber={0} />
-			<div className="border-b border-primary border-opacity-10"></div>
-			<LandingHistoryCard workHistoryNumber={0} />
-			<div className="border-b border-primary border-opacity-10"></div>
-			<LandingHistoryCard workHistoryNumber={0} />
+				<LandingHistoryCard workHistoryNumber={0} />
+				<div className="border-b border-primary border-opacity-10"></div>
+				<LandingHistoryCard workHistoryNumber={0} />
+				<div className="border-b border-primary border-opacity-10"></div>
+				<LandingHistoryCard workHistoryNumber={0} />
 
 			</div>
 			
 			{/* Education Section */}
 			<div className="flex flex-col py-4 border-primary bg-primary">
 			
-			<h3 className="uppercase text-xl font-bold pb-2">Education</h3>
+				<h3 className="uppercase mb-2 lg:mb-0 text-md md:text-xl font-bold">Education</h3>
 
-			<h4 className="text-lg font-bold">Master of Communication and Media Studies, Monash University</h4>
-			<p className="text-md text-gray-500 pb-4">2016 - 2017</p>
+				<h4 className="text-sm md:text-lg font-bold">Master of Communication and Media Studies, Monash University</h4>
+				<p className="text-xs md:text-sm text-gray-500 pb-4">2016 - 2017</p>
 
-			<h4 className="text-lg font-bold">UX/UI & Frontend Development Bootcamp, Monash University</h4>
-			<p className="text-md text-gray-500">2021 - 2022</p>
+				<h4 className="text-sm md:text-lg font-bold">UX/UI & Frontend Development Bootcamp, Monash University</h4>
+				<p className="text-xs md:text-sm text-gray-500">2021 - 2022</p>
 
 			</div>
 
 			{/* Skills Section */}
 			<div className="flex flex-col py-4 border-primary bg-primary">
 				
-				<h3 className="uppercase text-xl font-bold pb-2">Skills</h3>
+				<h3 className="uppercase mb-2 lg:mb-0 text-md md:text-xl font-bold">Skills</h3>
 
-				<div className="flex flex-row flex-wrap space-x-4 *:rounded-full *:bg-white *:px-6 *:py-2">
+				<div className="flex flex-col items-start md:flex-row md:flex-wrap gap-y-1 md:gap-y-2 text-xs md:text-base md:space-x-4 md:pl-0 
+		  			*:rounded-full *:bg-white *:md:px-6 *:px-3 *:py-2">
 					<div>Figma Prototyping</div>
 					<div>Project Coordination</div>
 					<div>Design Critique</div>

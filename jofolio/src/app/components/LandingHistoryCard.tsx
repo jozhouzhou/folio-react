@@ -19,17 +19,18 @@ export default function LandingHistoryCard({ workHistoryNumber }: LandingHistory
 	]
 	
 	return (
-		<div className="space-y-1 pt-4 pb-4">
+		<div className="space-y-1 mt-4 mb-4">
           
-          <h4 className="text-lg font-bold">{skillData[workHistoryNumber].title}</h4>
-          <p className="text-md text-gray-500">{skillData[workHistoryNumber].desc}</p>
+          <h4 className="text-sm md:text-lg font-bold">{skillData[workHistoryNumber].title}</h4>
+          <p className="text-xs md:text-sm text-gray-500">{skillData[workHistoryNumber].desc}</p>
 
-          <div className="flex flex-row flex-wrap space-x-4 pt-2 *:rounded-full *:bg-white *:px-6 *:py-2">
-            <div>Figma Prototyping</div>
-            <div>Project Coordination</div>
-            <div>Design Critique</div>
-            <div>Design Conceptualisation & Presentation</div>
-            <div>Stakeholder Communication</div>
+          <div className="flex flex-col items-start md:flex-row md:flex-wrap gap-y-1 md:gap-y-2 text-xs md:text-base md:space-x-4 pt-2 md:pl-0 
+		  	*:rounded-full *:bg-white *:md:px-6 *:px-3 *:py-2">
+				<h1>Figma Prototyping</h1>
+				<div>Project Coordination</div>
+				<div>Design Critique</div>
+				<div>Design Conceptualisation & Presentation</div>
+				<div>Stakeholder Communication</div>
           </div>
 
         </div>
