@@ -26,11 +26,11 @@ function Hero() {
 	return (
 		<div className="flex flex-col justify-center items-center mb-12 md:flex-row md:space-x-12 md:mb-36 md:mx-20">
 
-			<h1 className="w-full md:w-5/12 text-center pb-4 text-3xl md:text-4xl md:pb-0 lg:text-5xl font-black uppercase bg-blue-200">
+			<h1 className="w-full md:w-5/12 text-center pb-4 text-2xl md:text-4xl md:pb-0 lg:text-5xl font-black uppercase">
 				Research, Design<br />and Resolve 
 			</h1>
 
-			<div className="bg-red-300 w-full flex flex-row h-24 space-x-4 justify-center md:justify-start md:w-7/12 md:h-72 md:space-x-8 overflow-hidden">
+			<div className="w-full flex flex-row h-24 space-x-4 justify-center md:justify-start md:w-7/12 md:h-72 md:space-x-8 overflow-hidden">
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
 				<img className="object-fill"  src="/hero-mockup3.png" alt="" />
@@ -43,22 +43,22 @@ function Hero() {
 
 function SkillList() {
 	return (
-	  <div className="flex flex-col px-20 items-center mb-36">
-  
-		<h2 className="pb-20 text-5xl font-black uppercase">Explore <span className="text-highlight">Jo&apos;s</span> Offerings to You</h2>
-  
-		<div className="grid grid-cols-3 content-evenly w-full gap-16">
-		  
-		  <LandingSkillCard skillNumber={0}/>
-		  <LandingSkillCard skillNumber={1}/>
-		  <LandingSkillCard skillNumber={2}/>
-		  <LandingSkillCard skillNumber={3}/>
-		  <LandingSkillCard skillNumber={4}/>
-		  <LandingSkillCard skillNumber={5}/>
-  
+		<div className="flex flex-col items-center mb-12 mx-8 md:mx-20 lg:mb-24 xl:mb-36">
+	
+			<h2 className="pb-4 font-black uppercase text-nowrap text-2xl md:text-4xl md:pb-8 lg:text-5xl lg:pb-12 xl:pb-20">Explore <span className="text-highlight">Jo&apos;s</span> Offerings</h2>
+	
+			<div className="grid grid-cols-1 lg:grid-cols-3 content-evenly w-full gap-2 md:gap-4 lg:gap-y-8 lg:gap-x-6 xl:gap-16">
+			
+				<LandingSkillCard skillNumber={0}/>
+				<LandingSkillCard skillNumber={1}/>
+				<LandingSkillCard skillNumber={2}/>
+				<LandingSkillCard skillNumber={3}/>
+				<LandingSkillCard skillNumber={4}/>
+				<LandingSkillCard skillNumber={5}/>
+		
+			</div>
+	
 		</div>
-  
-	  </div>
 	);
 }	
 
