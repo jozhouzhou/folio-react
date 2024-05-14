@@ -146,7 +146,7 @@ function ProjectShowcase() {
 
 function WorkHistory() {
   return (
-    <div className="flex flex-col px-4 lg:px-20 items-center mb-8 md:mb-12 lg:mb-20 xl:mb-28">
+    <div className="flex flex-col px-4 lg:px-20 items-center mb-6 md:mb-12 lg:mb-20 xl:mb-28">
 
 		<h2 className="pb-4 font-black uppercase text-2xl md:text-4xl lg:text-5xl md:pb-8 lg:pb-12 xl:pb-20">
 			<span className="text-highlight">Jo&apos;s</span> History
