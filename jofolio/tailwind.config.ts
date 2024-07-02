@@ -18,6 +18,12 @@ const config: Config = {
       },
       colors: {
         primary: '#466dff',
+        'primary-50': '#DBE1F8',
+        'primary-100': '#B8C4F0',
+        'primary-400': '#4D6BDA',
+        'primary-600': '#2E4083',
+        'primary-700': '#1F2B57',
+        'background-50': '#F2F4F6',
         secondaryRed: '#E94C55',
         secondaryYellow: '#fedc66',
         highlight: '#bccad2',
