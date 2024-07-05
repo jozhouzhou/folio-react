@@ -48,7 +48,7 @@ export default function LandingSkillCard({ skillNumber }: LandingSkillCardProps)
 	return (
         <div className="flex flex-col w-full items-center text-center px-6 py-2 md:py-8">
           	
-			<div className="flex w-1/6 aspect-square mx-auto items-center justify-center bg-primary-50 rounded-full p-2 md:mb-0 lg:mb-2 xl:mb-6">
+			<div className="flex w-1/6 aspect-square mx-auto items-center justify-center bg-primary-50 rounded-full p-2 mb-2 lg:mb-4">
 				<Image 
 					width={skillData[skillNumber].width} height={skillData[skillNumber].height} 
 					src={skillData[skillNumber].icon} alt={skillData[skillNumber].title}

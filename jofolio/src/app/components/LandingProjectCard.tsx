@@ -16,13 +16,13 @@ export default function LandingProjectCard({ projectNumber }: LandingProjectCard
 		},
 		{
 			title: 'Website Redesign Case Study',
-			desc: 'Redesigned the Gym Mate app for daily class bookings and records, optimising user experience with intuitive navigation and streamlined reservations.',
+			desc: 'rvations.',
 			link: './project1',
 			linkLabel: 'Read Case Study',
 			img: './hero-mockup2.png'
 		},
 		{
-			title: 'Website Redesign Case Study',
+			title: 'Website Redesign ',
 			desc: 'Redesigned the Gym Mate app for daily class bookings and records, optimising user experience with intuitive navigation and streamlined reservations.',
 			link: './project1',
 			linkLabel: 'Read Case Study',
@@ -32,15 +32,15 @@ export default function LandingProjectCard({ projectNumber }: LandingProjectCard
 	]
 	
 	return (
-        <div className="flex rounded-lg text-left bg-background-50 p-4">
+        <div className="flex w-full rounded-lg text-left bg-background-50 p-4 lg:p-6">
 		
 			<div className="flex flex-col justify-between rounded-lg bg-white p-6">
 				
 				<div className="flex flex-col">
-					<div className="flex aspect-square rounded-md mb-6 mx-auto items-center justify-center bg-primary">
-						<img src={skillData[projectNumber].img} />
-					</div>
-
+					
+					<img src={skillData[projectNumber].img} 
+						className="flex aspect-[4/3] lg:aspect-square rounded-md mb-6 mx-auto bg-primary"/>
+				
 					<span className="font-bold text-2xl mb-2">{skillData[projectNumber].title}</span>
 					<span className="text-md mb-6">{skillData[projectNumber].desc}</span>
 				</div>
