@@ -94,6 +94,18 @@ function DesignShowcase() {
 				</div>
 			</LandingDesignShowcaseCard>
 
+			<LandingDesignShowcaseCard>
+				<div>
+				<h2 className="pb-4 font-bold uppercase text-nowrap text-lg lg:text-2xl lg:pb-20">BECAUSE <br/> BLAH BLAH BLAH <br/><br/> DUH.</h2>
+				</div>
+			</LandingDesignShowcaseCard>
+
+			<LandingDesignShowcaseCard>
+				<div>
+				<h2 className="pb-4 font-bold uppercase text-nowrap text-lg lg:text-2xl lg:pb-20">BECAUSE <br/> BLAH BLAH BLAH <br/><br/> DUH.</h2>
+				</div>
+			</LandingDesignShowcaseCard>
+
 		</div>
 	);
 }
