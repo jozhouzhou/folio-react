@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 			<body className={inter.className}>
 				<Providers>
 					
-					<NavMenu />
+					<Navbar />
 
 					<div className="mx-4 md:mx-16">
 
@@ -35,20 +35,24 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   	);
 }
 
-function NavMenu() {
+function Navbar() {
 	
 	return (
 		
-		<div className="flex flex-col justify-center mx-6 lg:mx-36 border-b border-primary-50">
+		<div className="flex flex-col justify-center px-6 lg:px-36 border-b border-primary-50 bg-background">
 			<div className="flex flex-row items-center my-4 lg:my-6 justify-between">
 
-				{/* Logo */}
+				{/* email */}
 				<a href="/" className="flex items-center cursor-pointer">
-					<h1 className="font-bold text-xl md:text-3xl uppercase text-nowrap">Jo Zhou</h1>
+					<h1 className="font-bold text-xl md:text-3xl uppercase text-nowrap">jozhou.uxui@gmail.com</h1>
 				</a>
 
-				{/* Nav Links */}
-				<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-white text-xs lg:text-base px-4 lg:px-8 py-2">My Resume</a>
+				{/* buttons */}
+				<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-white text-xs lg:text-base px-4 lg:px-8 py-2">Copy</a>
+				<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-white text-xs lg:text-base px-4 lg:px-8 py-2">Resume</a>
+				
+				{/* links */}
+				<a href="https://www.google.com"> LinkedIn / Behance</a>
 
 			</div>
 		</div>
