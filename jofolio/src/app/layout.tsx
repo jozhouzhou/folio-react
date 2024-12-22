@@ -39,7 +39,7 @@ function Navbar() {
 	
 	return (
 		
-		<div className="flex flex-col justify-center px-6 lg:px-36 border-b border-primary-50 bg-background">
+		<div className="flex flex-col justify-center px-6 lg:px-36 bg-background">
 			<div className="flex flex-row items-center my-4 lg:my-6 justify-between">
 
 				{/* email */}

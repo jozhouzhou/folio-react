@@ -7,9 +7,10 @@ import LandingDesignShowcaseCard from "./components/LandingDesignShowcaseCard";
 
 export default function Home() {
 	return (
-		<main className="py-1 md:py-6 lg:py-12">
+		<main className="">
 
 			<Hero />
+			<ServicesList />
 			<ProjectShowcase />
 			<DesignShowcase />
 			<SkillList />
@@ -30,6 +31,16 @@ function Hero() {
 			</h1>
 
 			<div className="bg-red-500 h-[50px] w-1/4 ">BUTTON</div>
+		</div>
+	);
+}
+
+function ServicesList() {
+	return (
+
+		<div>
+
+
 		</div>
 	);
 }
