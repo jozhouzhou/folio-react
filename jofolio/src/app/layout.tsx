@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 					
 					<Navbar />
 
-					<div className="mx-4 md:mx-16">
+					<div className="">
 
 						{children}
 

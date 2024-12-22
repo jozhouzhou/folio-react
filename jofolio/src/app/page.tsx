@@ -20,9 +20,17 @@ export default function Home() {
 
 function Hero() {
 	return (
-		<h1 className="w-full text-center pb-4 text-2xl md:pb-8 lg:text-6xl mb-8 md:mb-12 lg:mb-20 xl:mb-28 mt-4 font-bold uppercase">
-			Research, Design<br />and Resolve 
-		</h1>
+		
+		<div className="bg-background rounded-b-[72px] flex flex-col items-center">
+			
+			<div className="bg-red-500 h-[250px] w-[250px] ">Image</div>
+			
+			<h1 className="w-full text-center pb-4 text-2xl md:pb-8 lg:text-6xl mb-8 md:mb-12 lg:mb-20 xl:mb-28 mt-4 font-bold uppercase">
+				Building digital products, brands and experience.
+			</h1>
+
+			<div className="bg-red-500 h-[50px] w-1/4 ">BUTTON</div>
+		</div>
 	);
 }
 
