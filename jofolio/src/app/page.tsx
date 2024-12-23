@@ -11,9 +11,7 @@ export default function Home() {
 
 			<Hero />
 			<ServicesList />
-			<ProjectShowcase />
-			<DesignShowcase />
-			<SkillList />
+			
 
 		</main>
 	);
