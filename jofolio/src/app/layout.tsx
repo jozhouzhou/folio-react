@@ -1,13 +1,10 @@
 "use client"
 
-import { Lunasima } from "next/font/google";
-
 import React, { useRef, useState } from 'react';
-
+import { Lunasima } from "next/font/google";
 import {Providers} from "./providers";
 
 import "./globals.css";
-import SocialMediaIcon from "./components/SocialMediaIcon";
 
 const base_font = Lunasima({
 	subsets: ["latin"],
@@ -46,7 +43,6 @@ function Navbar() {
 	  document.execCommand('copy');
 	  e.target.focus();
 	};
-	
 	
 	return (
 		
