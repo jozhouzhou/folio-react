@@ -1,8 +1,9 @@
 "use client"
 
 import { Lunasima } from "next/font/google";
-import * as React from "react";
-import { useState } from 'react';
+
+import React, { useRef, useState } from 'react';
+
 import {Providers} from "./providers";
 
 import "./globals.css";
@@ -36,22 +37,38 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 }
 
 function Navbar() {
+	
+	{/* copy to clipboard logic */}
+	const [copySuccess, setCopySuccess] = useState('');
+	const textAreaRef = useRef(null);
+  
+	function copyToClipboard(e) {
+	  document.execCommand('copy');
+	  e.target.focus();
+	};
+	
+	
 	return (
 		
-		<div className="flex flex-row items-center py-4 lg:py-6 justify-between px-6 lg:px-36 bg-background">
+		<div className="flex flex-row items-center py-8 justify-between px-6 lg:px-36 bg-background">
 
-			<div className="flex justify-start items-center">
+			<div className="flex items-center justify-start space-x-2">
 
 				{/* email */}
-				<span className="text-lg">jozhou.uxui@gmail.com</span>
+				<span className="text-xl">jozhou.uxui@gmail.com</span>
 
 				{/* buttons */}
-				<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-xs lg:text-base px-4 lg:px-8 py-2">Copy</a>
-				<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-xs lg:text-base px-4 lg:px-8 py-2">Resume</a>
+				<button onClick={copyToClipboard} ref={textAreaRef} value='jozhou.uxui@gmail.com' className="cursor-pointer rounded-full text-base bg-white border-background border px-12 py-2.5">Copy</button>
+				<a href="/resume" className="cursor-pointer rounded-full text-base bg-white border-background border px-12 py-2.5">Resume</a>
 			
 			</div>
+
 			{/* links */}
-			<a href="https://www.google.com"> LinkedIn / Behance</a>
+			<div>
+				<a href="https://www.google.com" className="text-xl underline">LinkedIn</a>
+				<span className="px-[15px]">/</span>
+				<a href="https://www.google.com" className="text-xl underline">Behance</a>
+			</div>
 
 		</div>
   	);
