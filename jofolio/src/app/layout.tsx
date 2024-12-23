@@ -60,8 +60,6 @@ function Footer() {
   return (
     <div className="flex flex-col items-center rounded-t-[72px] bg-background pt-48">
 		
-
-
 			<span className="text-2xl md:text-3xl font-bold text-primary mb-8">Tell me about your next project</span>
 
 			<div className="flex flex-row">
@@ -78,8 +76,6 @@ function Footer() {
 				<span>LinkedIn / Behance</span>
 
 			</div>
-
-
 
     </div>
   );

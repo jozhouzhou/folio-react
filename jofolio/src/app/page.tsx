@@ -36,7 +36,16 @@ function Hero() {
 function ServicesList() {
 	return (
 
-		<div>
+		<div className="flex flex-col items-center px-20 my-24">
+
+			<h1>Services</h1>
+
+			<div className="flex flex-row pt-12 space-x-8">
+
+				<div className="w-[160px] h-[160px] bg-blue-200"></div>
+				<div className="w-[160px] h-[160px] bg-blue-200"></div>
+				<div className="w-[160px] h-[160px] bg-blue-200"></div>
+			</div>
 
 
 		</div>
