@@ -1,6 +1,6 @@
 "use client"
 
-import { Alegreya_Sans } from "next/font/google";
+import { Lunasima } from "next/font/google";
 import * as React from "react";
 import { useState } from 'react';
 import {Providers} from "./providers";
@@ -8,15 +8,15 @@ import {Providers} from "./providers";
 import "./globals.css";
 import SocialMediaIcon from "./components/SocialMediaIcon";
 
-const inter = Alegreya_Sans({
+const base_font = Lunasima({
 	subsets: ["latin"],
-	weight: ['400', '700', '800']
+	weight: ['400', '700']
 });
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={base_font.className}>
 				<Providers>
 					
 					<Navbar />
@@ -40,15 +40,16 @@ function Navbar() {
 		
 		<div className="flex flex-row items-center py-4 lg:py-6 justify-between px-6 lg:px-36 bg-background">
 
-			{/* email */}
-			<a href="/" className="flex items-center cursor-pointer">
-				<h1 className="font-bold text-xl md:text-3xl uppercase text-nowrap">jozhou.uxui@gmail.com</h1>
-			</a>
+			<div className="flex justify-start items-center">
 
-			{/* buttons */}
-			<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-white text-xs lg:text-base px-4 lg:px-8 py-2">Copy</a>
-			<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-white text-xs lg:text-base px-4 lg:px-8 py-2">Resume</a>
+				{/* email */}
+				<span className="text-lg">jozhou.uxui@gmail.com</span>
+
+				{/* buttons */}
+				<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-xs lg:text-base px-4 lg:px-8 py-2">Copy</a>
+				<a href="/resume" className="cursor-pointer rounded-full bg-primary-400 text-xs lg:text-base px-4 lg:px-8 py-2">Resume</a>
 			
+			</div>
 			{/* links */}
 			<a href="https://www.google.com"> LinkedIn / Behance</a>
 
