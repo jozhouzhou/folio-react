@@ -15,15 +15,33 @@ export default function Home() {
 function Hero() {
 	return (
 		
-		<div className="bg-background rounded-b-[72px] flex flex-col items-center">
+		<div className="bg-background rounded-b-[72px] flex flex-col items-center pt-12 pb-14">
 			
-			<div className="bg-red-500 h-[250px] w-[250px] ">Image</div>
+			{/* hero image */}
+			<div className="relative h-44 w-44 mb-6">
+
+				<div className="bg-red-500 rounded-full w-full h-full border-3 border-white">
+					{/* Insert image here */}
+				</div>	
+				
+				<div className="absolute top-10 -right-16 -rotate-[15deg] rounded-full text-center text-lg drop-shadow bg-white py-2.5 px-6">Jo 👋</div>
+			</div>
 			
-			<h1 className="w-full text-center pb-4 text-2xl md:pb-8 lg:text-6xl mb-8 md:mb-12 lg:mb-20 xl:mb-28 mt-4 font-bold uppercase">
-				Building digital products, brands and experience.
+			{/* title */}
+			<h1 className="text-center text-5xl leading-tight font-bold mb-7">
+				Building digital products,<br />
+				brands and experiences.
 			</h1>
 
-			<div className="bg-red-500 h-[50px] w-1/4 ">BUTTON</div>
+			{/* button */}
+			<div className="flex flex-row rounded-full text-center text-base text-white bg-secondary space-x-2 py-4 px-9">
+
+				<span>Latest Shots</span>
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M7.43945 18.9999L14.4395 11.9999L7.43945 4.99989L8.50011 3.93923L16.5608 11.9999L8.50011 20.0605L7.43945 18.9999Z" fill="white"/>
+				</svg>
+			</div>
+
 		</div>
 	);
 }
