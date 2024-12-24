@@ -54,8 +54,8 @@ function Navbar() {
 				<span className="text-xl">jozhou.uxui@gmail.com</span>
 
 				{/* buttons */}
-				<button onClick={copyToClipboard} ref={textAreaRef} value='jozhou.uxui@gmail.com' className="cursor-pointer rounded-full text-base bg-white border-background border px-12 py-2.5">Copy</button>
-				<a href="/resume" className="cursor-pointer rounded-full text-base bg-white border-background border px-12 py-2.5">Resume</a>
+				<button onClick={copyToClipboard} ref={textAreaRef} value='jozhou.uxui@gmail.com' className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm px-12 py-2.5">Copy</button>
+				<a href="/resume" className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm px-12 py-2.5">Resume</a>
 			
 			</div>
 
