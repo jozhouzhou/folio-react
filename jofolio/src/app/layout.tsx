@@ -116,11 +116,11 @@ function Footer() {
 
 		</div>
 		
-		{/* Insert horizontal line here */}
-		<div className="flex w-full px-20 pt-16 pb-20"> <div className="w-full border-t-1 border-[#AFAFAF]"></div></div>
+		{/* horizontal line */}
+		<div className="flex w-full px-48 pt-16 pb-20"><div className="w-full border-t-1 border-[#AFAFAF]"></div></div>
 
 		{/* bottom section */}
-		<div className="flex flex-row w-full justify-between text-xl px-20 mb-36">
+		<div className="flex flex-row w-full justify-between text-xl px-48 mb-36">
 			<span>2024 All rights reserved.</span>
 			
 			{/* links */}
