@@ -39,7 +39,7 @@ function Navbar() {
 	const [copySuccess, setCopySuccess] = useState('');
 	const textAreaRef = useRef(null);
   
-	function copyToClipboard(e) {
+	function copyToClipboard(e: any) {
 	  document.execCommand('copy');
 	  e.target.focus();
 	};
