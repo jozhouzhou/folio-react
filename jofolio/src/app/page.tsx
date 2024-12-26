@@ -23,11 +23,11 @@ function Hero() {
 				<img className="w-full h-full rounded-full border-3 border-white" src={"/hero-portrait.png"} alt={""} />
 
 				<div className="absolute top-10 -right-16 -rotate-[15deg] rounded-full text-center text-lg drop-shadow bg-white py-2.5 px-6">Jo 👋</div>
-				
+
 			</div>
 			
 			{/* title */}
-			<h1 className="text-center text-5xl leading-tight font-bold mb-7">
+			<h1 className="text-center text-5xl leading-tight font-bold pb-7 bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text">
 				Building digital products,<br />
 				brands and experiences.
 			</h1>

@@ -81,7 +81,7 @@ function Footer() {
 		</svg>
 
 		{/* footer title */}
-		<h1 className="text-5xl font-bold my-8">Tell me about your next project</h1>
+		<h1 className="text-5xl font-bold py-8 bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text">Tell me about your next project</h1>
 
 		{/* email button */}
 		<a href="/resume" className="cursor-pointer rounded-full bg-secondary border-white border drop-shadow-sm text-white text-base px-10 py-4">
