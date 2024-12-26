@@ -20,11 +20,10 @@ function Hero() {
 			{/* hero image */}
 			<div className="relative h-44 w-44 mb-6">
 
-				<div className="bg-red-500 rounded-full w-full h-full border-3 border-white">
-					{/* Insert image here */}
-				</div>	
-				
+				<img className="w-full h-full rounded-full border-3 border-white" src={"/hero-portrait.png"} alt={""} />
+
 				<div className="absolute top-10 -right-16 -rotate-[15deg] rounded-full text-center text-lg drop-shadow bg-white py-2.5 px-6">Jo 👋</div>
+				
 			</div>
 			
 			{/* title */}
