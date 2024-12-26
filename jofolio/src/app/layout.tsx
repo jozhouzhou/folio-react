@@ -83,38 +83,19 @@ function Footer() {
 		{/* footer title */}
 		<h1 className="text-5xl font-bold my-8">Tell me about your next project</h1>
 
-		{/* buttons */}
-		<div className="flex flex-row space-x-4">
-			
-			<a href="/resume" className="cursor-pointer rounded-full bg-secondary border-white border drop-shadow-sm text-white text-base px-10 py-4">
-				<div className="flex flex-row space-x-3">
-					
-					<span>Email me</span>
+		{/* email button */}
+		<a href="/resume" className="cursor-pointer rounded-full bg-secondary border-white border drop-shadow-sm text-white text-base px-10 py-4">
+			<div className="flex flex-row space-x-3">
+				
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.16667 7.79688L12.0399 12.5695L17.9131 7.79688L18.8591 8.96099L12.0399 14.5023L5.2207 8.96099L6.16667 7.79688Z" fill="white"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 2.25H22.75V21.75H1.25V2.25ZM2.75 3.75V20.25H21.25V3.75H2.75Z" fill="white"/>
+				</svg>
 
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.16667 7.79688L12.0399 12.5695L17.9131 7.79688L18.8591 8.96099L12.0399 14.5023L5.2207 8.96099L6.16667 7.79688Z" fill="white"/>
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 2.25H22.75V21.75H1.25V2.25ZM2.75 3.75V20.25H21.25V3.75H2.75Z" fill="white"/>
-					</svg>
+				<span>Email me</span>
 
-				</div>
-			</a>
-
-			<a href="/resume" className="cursor-pointer rounded-full bg-white border-background border drop-shadow-sm text-base px-10 py-4">
-				<div className="flex flex-row space-x-3">
-					
-					<span>Text me</span>
-
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M18.0175 6.00335C14.711 2.69655 9.33823 2.69655 6.0318 6.00421C4.37258 7.66306 3.54633 9.83175 3.54794 12.0032C3.54919 13.6824 3.53712 15.9847 3.52476 17.8658C3.51858 18.8066 3.51232 19.6426 3.50761 20.2434L3.50596 20.4478C3.56736 20.4474 3.63196 20.447 3.69956 20.4465C4.29364 20.4428 5.12012 20.4386 6.04978 20.4365C7.90704 20.4325 10.1834 20.4374 11.8407 20.4732C14.0711 20.5214 16.3129 19.6963 18.0175 17.9916C21.3243 14.6844 21.3301 9.31634 18.0175 6.00335ZM2.74975 21.2035L1.99978 21.1969L2.00765 20.2316C2.01236 19.6313 2.01862 18.7959 2.0248 17.8559C2.03715 15.9752 2.04918 13.6776 2.04794 12.0043C2.04605 9.45081 3.0189 6.8954 4.97094 4.94374C4.97089 4.94379 4.97099 4.94369 4.97094 4.94374M4.97094 4.94374C8.8632 1.05022 15.186 1.05012 19.0782 4.94274C22.9772 8.8422 22.97 15.1599 19.0782 19.0522C17.0726 21.0579 14.4309 22.0295 11.8083 21.9728C10.1703 21.9374 7.90933 21.9325 6.05303 21.9365C5.12591 21.9386 4.30156 21.9428 3.70901 21.9465C3.41275 21.9484 3.17448 21.9501 3.01034 21.9514L2.75747 21.9535L2.74975 21.2035L2.75646 21.9535L1.99316 21.9603L1.99978 21.1969L2.74975 21.2035" fill="#333333"/>
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M7.46582 11.6309H9.06456V13.1309H7.46582V11.6309Z" fill="#333333"/>
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M11.2002 11.6309H12.7989V13.1309H11.2002V11.6309Z" fill="#333333"/>
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9346 11.6309H16.5333V13.1309H14.9346V11.6309Z" fill="#333333"/>
-					</svg>
-
-				</div>
-			</a>
-
-		</div>
+			</div>
+		</a>
 		
 		{/* horizontal line */}
 		<div className="flex w-full px-48 pt-16 pb-20"><div className="w-full border-t-1 border-[#AFAFAF]"></div></div>
