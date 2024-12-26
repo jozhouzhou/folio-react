@@ -61,9 +61,9 @@ function Navbar() {
 
 			{/* links */}
 			<div>
-				<a href="https://www.google.com" className="text-xl underline">LinkedIn</a>
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" className="text-xl underline">LinkedIn</a>
 				<span className="cursor-default px-[15px]">/</span>
-				<a href="https://www.google.com" className="text-xl underline">Behance</a>
+				<a href="https://www.behance.net/iozhou" className="text-xl underline">Behance</a>
 			</div>
 
 		</div>
@@ -106,9 +106,9 @@ function Footer() {
 			
 			{/* links */}
 			<div>
-				<a href="https://www.google.com" className="text-xl underline">LinkedIn</a>
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" className="text-xl underline">LinkedIn</a>
 				<span className="cursor-default px-[15px]">/</span>
-				<a href="https://www.google.com" className="text-xl underline">Behance</a>
+				<a href="https://www.behance.net/iozhou" className="text-xl underline">Behance</a>
 			</div>
 
 		</div>
