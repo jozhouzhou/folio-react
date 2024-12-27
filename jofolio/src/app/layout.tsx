@@ -44,7 +44,7 @@ function Navbar() {
 				<span className="text-xl underline underline-offset-[3px] decoration-1 hidden lg:flex">jozhou.uxui@gmail.com</span>
 
 				{/* email button - mobile only */}
-				<a href="/resume" className="cursor-pointer rounded-full text-base bg-foreground border-white border drop-shadow-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:fill-foreground py-3 px-10 mr-2 lg:m-0 lg:p-0 lg:hidden">
+				<a href="mailto:jozhou.uxui@gmail.com" className="cursor-pointer rounded-full text-base bg-foreground border-white border drop-shadow-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:fill-foreground py-3 px-10 mr-2 lg:m-0 lg:p-0 lg:hidden">
 					
 					<svg className="fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.16667 7.79688L12.0399 12.5695L17.9131 7.79688L18.8591 8.96099L12.0399 14.5023L5.2207 8.96099L6.16667 7.79688Z" />
@@ -116,7 +116,7 @@ function Footer() {
 		<h1 className="text-center text-3xl font-bold bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text pt-6 pb-6 lg:pb-8 lg:pt-8 lg:text-5xl">Tell me about your next project</h1>
 
 		{/* email button */}
-		<a href="/resume" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
+		<a href="mailto:jozhou.uxui@gmail.com" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
 			<div className="flex flex-row items-center space-x-3">
 				
 				<svg className="fill-white w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@ function Footer() {
 		<div className="flex w-full px-8 pt-6 pb-16 lg:px-48 lg:pt-20 lg:pb-28"><div className="w-full border-t-1 border-[#AFAFAF]"></div></div>
 
 		{/* bottom section */}
-		<div className="flex flex-row w-full items-center justify-between text-[13px] px-8 pb-36 lg:px-48 mb-36 lg:pb-0 lg:text-sm">
+		<div className="flex flex-row w-full items-center justify-between text-[13px] px-8 pb-36 lg:px-48 mb-36 lg:pb-0 lg:text-base">
 			<span>2024 All rights reserved.</span>
 			
 			{/* links - desktop */}
