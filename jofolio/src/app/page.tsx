@@ -20,7 +20,7 @@ function Hero() {
 			{/* hero image */}
 			<div className="relative h-32 w-32 lg:h-44 lg:w-44 mb-6">
 
-				<img className="w-full h-full rounded-full border-3 border-white" src={"/hero-portrait.png"} alt={""} />
+				<img className="w-full h-full rounded-full border-3 border-white grayscale" src={"/hero-portrait.png"} alt={""} />
 
 				<div className="absolute top-10 -right-14 -rotate-[20deg] rounded-full text-center text-xs lg:text-lg drop-shadow bg-white py-2.5 px-6 lg:-right-16">Jo 👋</div>
 
