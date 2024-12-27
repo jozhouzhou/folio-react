@@ -113,10 +113,10 @@ function Footer() {
 		</svg>
 
 		{/* footer title */}
-		<h1 className="text-center text-3xl font-bold bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text pt-6 pb-8 lg:pt-8 lg:text-5xl">Tell me about your next project</h1>
+		<h1 className="text-center text-3xl font-bold bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text pt-6 pb-6 lg:pb-8 lg:pt-8 lg:text-5xl">Tell me about your next project</h1>
 
 		{/* email button */}
-		<a href="/resume" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-4">
+		<a href="/resume" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
 			<div className="flex flex-row items-center space-x-3">
 				
 				<svg className="fill-white w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,10 +130,10 @@ function Footer() {
 		</a>
 		
 		{/* horizontal line */}
-		<div className="flex w-full px-8 pt-8 pb-16 lg:px-48 lg:pt-20 lg:pb-28"><div className="w-full border-t-1 border-[#AFAFAF]"></div></div>
+		<div className="flex w-full px-8 pt-6 pb-16 lg:px-48 lg:pt-20 lg:pb-28"><div className="w-full border-t-1 border-[#AFAFAF]"></div></div>
 
 		{/* bottom section */}
-		<div className="flex flex-row w-full items-center justify-between text-sm px-8 pb-36 lg:px-48 mb-36 lg:pb-0">
+		<div className="flex flex-row w-full items-center justify-between text-[13px] px-8 pb-36 lg:px-48 mb-36 lg:pb-0 lg:text-sm">
 			<span>2024 All rights reserved.</span>
 			
 			{/* links - desktop */}
@@ -147,13 +147,13 @@ function Footer() {
 			<div className="flex lg:hidden">
 				
 				<a href="https://www.linkedin.com/in/jozhou-uxui/" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white mr-3">
-					<svg className="fill-foreground" width="38" height="38" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+					<svg className="fill-foreground" width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15ZM7.6875 12.4688V22.5H10.875V12.4688H7.6875ZM7.5 9.28125C7.5 10.3125 8.25 11.0625 9.28125 11.0625C10.3125 11.0625 11.0625 10.3125 11.0625 9.28125C11.0625 8.25 10.3125 7.5 9.28125 7.5C8.34375 7.5 7.5 8.25 7.5 9.28125ZM19.3125 22.5H22.3125V16.3125C22.3125 13.2187 20.4375 12.1875 18.6562 12.1875C17.0625 12.1875 15.9375 13.2187 15.6562 13.875V12.4688H12.6562V22.5H15.8437V17.1563C15.8437 15.75 16.7812 15 17.7187 15C18.6562 15 19.3125 15.4688 19.3125 17.0625V22.5Z"/>
 					</svg>
 				</a>
 				
 				<a href="https://www.behance.net/iozhou" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white">
-					<svg className="fill-foreground"width="38" height="38" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+					<svg className="fill-foreground" width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 						<path d="M12.4956 13.7761C12.2625 13.9427 11.9628 14.0426 11.5964 14.0426H9.53156V11.8778H11.4632C11.663 11.8778 11.8296 11.8778 11.9961 11.9111C12.1626 11.9444 12.2958 12.011 12.429 12.0776C12.5622 12.1775 12.6622 12.2775 12.7288 12.4107C12.7954 12.5439 12.8287 12.7437 12.8287 12.9435C12.8287 13.3099 12.7288 13.6096 12.4956 13.7761Z" />
 						<path d="M12.2625 17.9059C12.096 17.9392 11.8962 17.9725 11.6963 17.9725H9.53156V15.4081H11.7296C12.1626 15.4081 12.5289 15.508 12.7954 15.7078C13.0618 15.9409 13.195 16.274 13.195 16.7402C13.195 16.9734 13.1284 17.1732 13.0618 17.3397C12.9619 17.5062 12.862 17.6061 12.7288 17.7061C12.5956 17.806 12.429 17.8726 12.2625 17.9059Z" />
 						<path d="M19.1898 14.0759C19.6228 14.0759 19.9891 14.2091 20.2222 14.4422C20.4554 14.6754 20.6219 15.0084 20.6885 15.508H17.6911C17.6911 15.3976 17.714 15.2873 17.7407 15.158C17.7463 15.1312 17.752 15.1036 17.7577 15.075C17.791 14.9085 17.8576 14.742 17.9909 14.6088C18.1241 14.4755 18.2573 14.3423 18.4571 14.2424C18.6569 14.1425 18.8901 14.0759 19.1898 14.0759Z" />
