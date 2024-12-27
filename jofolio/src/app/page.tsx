@@ -15,28 +15,28 @@ export default function Home() {
 function Hero() {
 	return (
 		
-		<div className="flex flex-col bg-background rounded-b-[72px] items-center pt-12 pb-14">
+		<div className="flex flex-col bg-background rounded-b-[72px] items-center pt-12 pb-16 lg:pb-14">
 			
 			{/* hero image */}
-			<div className="relative h-44 w-44 mb-6">
+			<div className="relative h-32 w-32 lg:h-44 lg:w-44 mb-6">
 
 				<img className="w-full h-full rounded-full border-3 border-white" src={"/hero-portrait.png"} alt={""} />
 
-				<div className="absolute top-10 -right-16 -rotate-[15deg] rounded-full text-center text-lg drop-shadow bg-white py-2.5 px-6">Jo 👋</div>
+				<div className="absolute top-10 -right-14 -rotate-[20deg] rounded-full text-center text-xs lg:text-lg drop-shadow bg-white py-2.5 px-6 lg:-right-16">Jo 👋</div>
 
 			</div>
 			
 			{/* title */}
-			<h1 className="text-center text-5xl leading-tight font-bold pb-7 bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text">
+			<h1 className="text-center text-[24px] leading-tight font-bold pb-7 bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text lg:text-5xl">
 				Building digital products,<br />
 				brands and experiences.
 			</h1>
 
 			{/* button */}
-			<a href="https://www.google.com" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-base transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground py-4 px-8">
+			<a href="https://www.google.com" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground py-4 px-8">
 				<div className="flex flex-row-reverse items-center">
 
-					<svg className="fill-white ml-2" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<svg className="fill-white ml-2 w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M7.43945 18.9999L14.4395 11.9999L7.43945 4.99989L8.50011 3.93923L16.5608 11.9999L8.50011 20.0605L7.43945 18.9999Z" />
 					</svg>
 
