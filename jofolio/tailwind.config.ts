@@ -25,7 +25,7 @@ const config: Config = {
         'primary-700': '#1F2B57',
         'background-50': '#F2F4F6',
         background: '#EBEBEB',
-        secondary:'#373737',
+        foreground:'#373737',
         secondaryRed: '#E94C55',
         secondaryYellow: '#fedc66',
         highlight: '#bccad2',

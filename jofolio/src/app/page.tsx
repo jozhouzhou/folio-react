@@ -33,13 +33,15 @@ function Hero() {
 			</h1>
 
 			{/* button */}
-			<a href="https://www.google.com">
-				<div className="flex flex-row rounded-full text-center text-base text-white bg-secondary border-white border drop-shadow-sm space-x-2 py-4 px-9">
+			<a href="https://www.google.com" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-base transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground py-4 px-8">
+				<div className="flex flex-row-reverse items-center">
+
+					<svg className="fill-white ml-2" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M7.43945 18.9999L14.4395 11.9999L7.43945 4.99989L8.50011 3.93923L16.5608 11.9999L8.50011 20.0605L7.43945 18.9999Z" />
+					</svg>
 
 					<span>Latest Shots</span>
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M7.43945 18.9999L14.4395 11.9999L7.43945 4.99989L8.50011 3.93923L16.5608 11.9999L8.50011 20.0605L7.43945 18.9999Z" fill="white"/>
-					</svg>
+
 				</div>
 			</a>
 

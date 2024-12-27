@@ -44,17 +44,17 @@ function Navbar() {
 				<span className="text-xl underline underline-offset-[3px] decoration-1">jozhou.uxui@gmail.com</span>
 
 				{/* buttons */}
-				<a href="/resume" className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm px-8 py-3">
+				<a href="/resume" className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:text-white [&>*:first-child]:[&>*:first-child]:hover:stroke-white px-8 py-4">
 					<div className="flex flex-row items-center space-x-3">
 						
-						<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11.0934 14.2871H5.64941" stroke="#373737" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
-							<path d="M9.03144 10.5039H5.64844" stroke="#373737" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
-							<path d="M5.1912 19.25H16.6752V6.068L11.5682 0.75H1.3252V19.25" stroke="#373737" stroke-width="1.5" stroke-linecap="square"/>
-							<path d="M11.0918 3.30469V6.64969H16.1988" stroke="#373737" stroke-width="1.5" stroke-linecap="square"/>
+						<svg className="icon stroke-foreground" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.0934 14.2871H5.64941"  stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+							<path d="M9.03144 10.5039H5.64844"  stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+							<path d="M5.1912 19.25H16.6752V6.068L11.5682 0.75H1.3252V19.25" stroke-width="1.5" stroke-linecap="square"/>
+							<path d="M11.0918 3.30469V6.64969H16.1988" stroke-width="1.5" stroke-linecap="square"/>
 						</svg>
 
-						<span>Resume</span>
+						<span className="text">Resume</span>
 
 					</div>
 				</a>
@@ -86,12 +86,12 @@ function Footer() {
 		<h1 className="text-5xl font-bold py-8 bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text">Tell me about your next project</h1>
 
 		{/* email button */}
-		<a href="/resume" className="cursor-pointer rounded-full bg-secondary border-white border drop-shadow-sm text-white text-base px-10 py-4">
+		<a href="/resume" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-base transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-4">
 			<div className="flex flex-row items-center space-x-3">
 				
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.16667 7.79688L12.0399 12.5695L17.9131 7.79688L18.8591 8.96099L12.0399 14.5023L5.2207 8.96099L6.16667 7.79688Z" fill="white"/>
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 2.25H22.75V21.75H1.25V2.25ZM2.75 3.75V20.25H21.25V3.75H2.75Z" fill="white"/>
+				<svg className="fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M6.16667 7.79688L12.0399 12.5695L17.9131 7.79688L18.8591 8.96099L12.0399 14.5023L5.2207 8.96099L6.16667 7.79688Z" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 2.25H22.75V21.75H1.25V2.25ZM2.75 3.75V20.25H21.25V3.75H2.75Z" />
 				</svg>
 
 				<span>Email me</span>
