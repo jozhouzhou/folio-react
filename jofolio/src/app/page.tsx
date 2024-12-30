@@ -22,7 +22,7 @@ function Hero() {
 
 				<img className="w-full h-full rounded-full border-3 border-white grayscale" src={"/hero-portrait.png"} alt={""} />
 
-				<div className="absolute top-10 -right-14 -rotate-[20deg] rounded-full text-center text-xs lg:text-lg drop-shadow bg-white py-2.5 px-6 lg:-right-16">Jo 👋</div>
+				<div className="absolute top-10 -right-14 animate-float rounded-full text-center text-xs lg:text-lg drop-shadow bg-white py-2.5 px-6 lg:-right-16">Jo 👋</div>
 
 			</div>
 			

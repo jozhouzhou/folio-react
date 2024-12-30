@@ -11,6 +11,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0) rotate(340deg)' },
+          '50%': { transform: 'translateY(-5px) rotate(340deg)' },
+        },
+      },
+      animation: {
+        float: 'float 2s ease-in-out infinite',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
