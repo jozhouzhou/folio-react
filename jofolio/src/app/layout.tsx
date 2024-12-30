@@ -133,7 +133,7 @@ function Footer() {
 		<div className="flex w-full px-8 pt-6 pb-16 lg:px-48 lg:pt-20 lg:pb-28"><div className="w-full border-t-1 border-[#AFAFAF]"></div></div>
 
 		{/* bottom section */}
-		<div className="flex flex-row w-full items-center justify-between text-[13px] px-8 pb-16 lg:px-48 mb-36 lg:pb-0 lg:text-base">
+		<div className="flex flex-row w-full items-center justify-between text-[13px] px-8 pb-8 lg:px-48 mb-36 lg:pb-0 lg:text-base">
 			<span>2024 All rights reserved.</span>
 			
 			{/* links - desktop */}
