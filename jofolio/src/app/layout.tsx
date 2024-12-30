@@ -54,7 +54,7 @@ function Navbar() {
 				</a>
 
 				{/* resume button */}
-				<a href="/resume" className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:text-white [&>*:first-child]:[&>*:first-child]:hover:stroke-white py-3 px-10 lg:px-8 lg:py-4">
+				<a href="/resume-jozhou.pdf" className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:text-white [&>*:first-child]:[&>*:first-child]:hover:stroke-white py-3 px-10 lg:px-8 lg:py-4">
 					<div className="flex flex-row items-center lg:space-x-3">
 						
 						<svg className="icon stroke-foreground" width="24" height="24" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
