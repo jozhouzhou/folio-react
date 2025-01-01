@@ -41,7 +41,7 @@ function Navbar() {
 			<div className="flex items-center justify-start lg:space-x-4">
 
 				{/* email */}
-				<a href="mailto:jozhou.uxui@gmail.com" target="_blank" className="text-xl underline underline-offset-[3px] decoration-1 hidden lg:flex">jozhou.uxui@gmail.com</a>
+				<a href="mailto:jozhou.uxui@gmail.com" target="_blank" className="text-xl underline underline-offset-[3px] decoration-1 hidden lg:flex transition duration-150 ease-out hover:text-white">jozhou.uxui@gmail.com</a>
 
 				{/* email button - mobile only */}
 				<a href="mailto:jozhou.uxui@gmail.com" target="_blank" className="cursor-pointer rounded-full text-base bg-foreground border-white border drop-shadow-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:fill-foreground py-3 px-10 mr-2 lg:m-0 lg:p-0 lg:hidden">
@@ -73,9 +73,9 @@ function Navbar() {
 
 			{/* links - desktop */}
 			<div className="hidden lg:flex">
-				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="text-xl underline">LinkedIn</a>
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="text-xl underline underline-offset-[3px] decoration-1 transition duration-150 ease-out hover:text-white">LinkedIn</a>
 				<span className="cursor-default px-[15px]">/</span>
-				<a href="https://www.behance.net/iozhou" target="_blank" className="text-xl underline">Behance</a>
+				<a href="https://www.behance.net/iozhou" target="_blank" className="text-xl underline underline-offset-[3px] decoration-1 transition duration-150 ease-out hover:text-white">Behance</a>
 			</div>
 
 			{/* links - mobile */}
@@ -138,9 +138,9 @@ function Footer() {
 			
 			{/* links - desktop */}
 			<div className="hidden lg:flex">
-				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="text-xl underline">LinkedIn</a>
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="text-xl underline underline-offset-[3px] decoration-1 transition duration-150 ease-out hover:text-white">LinkedIn</a>
 				<span className="cursor-default px-[15px]">/</span>
-				<a href="https://www.behance.net/iozhou" target="_blank" className="text-xl underline">Behance</a>
+				<a href="https://www.behance.net/iozhou" target="_blank" className="text-xl underline underline-offset-[3px] decoration-1 transition duration-150 ease-out hover:text-white">Behance</a>
 			</div>
 
 			{/* links - mobile */}
