@@ -41,10 +41,10 @@ function Navbar() {
 			<div className="flex items-center justify-start lg:space-x-4">
 
 				{/* email */}
-				<span className="text-xl underline underline-offset-[3px] decoration-1 hidden lg:flex">jozhou.uxui@gmail.com</span>
+				<a href="mailto:jozhou.uxui@gmail.com" target="_blank" className="text-xl underline underline-offset-[3px] decoration-1 hidden lg:flex">jozhou.uxui@gmail.com</a>
 
 				{/* email button - mobile only */}
-				<a href="mailto:jozhou.uxui@gmail.com" className="cursor-pointer rounded-full text-base bg-foreground border-white border drop-shadow-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:fill-foreground py-3 px-10 mr-2 lg:m-0 lg:p-0 lg:hidden">
+				<a href="mailto:jozhou.uxui@gmail.com" target="_blank" className="cursor-pointer rounded-full text-base bg-foreground border-white border drop-shadow-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:fill-foreground py-3 px-10 mr-2 lg:m-0 lg:p-0 lg:hidden">
 					
 					<svg className="fill-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.16667 7.79688L12.0399 12.5695L17.9131 7.79688L18.8591 8.96099L12.0399 14.5023L5.2207 8.96099L6.16667 7.79688Z" />
@@ -54,7 +54,7 @@ function Navbar() {
 				</a>
 
 				{/* resume button */}
-				<a href="/resume-jozhou.pdf" className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:text-white [&>*:first-child]:[&>*:first-child]:hover:stroke-white py-3 px-10 lg:px-8 lg:py-4">
+				<a href="/resume-jozhou.pdf" target="_blank" className="cursor-pointer rounded-full text-base bg-white border-background border drop-shadow-sm transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:text-white [&>*:first-child]:[&>*:first-child]:hover:stroke-white py-3 px-10 lg:px-8 lg:py-4">
 					<div className="flex flex-row items-center lg:space-x-3">
 						
 						<svg className="icon stroke-foreground" width="24" height="24" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,21 +73,21 @@ function Navbar() {
 
 			{/* links - desktop */}
 			<div className="hidden lg:flex">
-				<a href="https://www.linkedin.com/in/jozhou-uxui/" className="text-xl underline">LinkedIn</a>
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="text-xl underline">LinkedIn</a>
 				<span className="cursor-default px-[15px]">/</span>
-				<a href="https://www.behance.net/iozhou" className="text-xl underline">Behance</a>
+				<a href="https://www.behance.net/iozhou" target="_blank" className="text-xl underline">Behance</a>
 			</div>
 
 			{/* links - mobile */}
 			<div className="flex lg:hidden">
 				
-				<a href="https://www.linkedin.com/in/jozhou-uxui/" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white mr-3">
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white mr-3">
 					<svg className="fill-foreground" width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15ZM7.6875 12.4688V22.5H10.875V12.4688H7.6875ZM7.5 9.28125C7.5 10.3125 8.25 11.0625 9.28125 11.0625C10.3125 11.0625 11.0625 10.3125 11.0625 9.28125C11.0625 8.25 10.3125 7.5 9.28125 7.5C8.34375 7.5 7.5 8.25 7.5 9.28125ZM19.3125 22.5H22.3125V16.3125C22.3125 13.2187 20.4375 12.1875 18.6562 12.1875C17.0625 12.1875 15.9375 13.2187 15.6562 13.875V12.4688H12.6562V22.5H15.8437V17.1563C15.8437 15.75 16.7812 15 17.7187 15C18.6562 15 19.3125 15.4688 19.3125 17.0625V22.5Z"/>
 					</svg>
 				</a>
 				
-				<a href="https://www.behance.net/iozhou" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white">
+				<a href="https://www.behance.net/iozhou" target="_blank" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white">
 					<svg className="fill-foreground"width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 						<path d="M12.4956 13.7761C12.2625 13.9427 11.9628 14.0426 11.5964 14.0426H9.53156V11.8778H11.4632C11.663 11.8778 11.8296 11.8778 11.9961 11.9111C12.1626 11.9444 12.2958 12.011 12.429 12.0776C12.5622 12.1775 12.6622 12.2775 12.7288 12.4107C12.7954 12.5439 12.8287 12.7437 12.8287 12.9435C12.8287 13.3099 12.7288 13.6096 12.4956 13.7761Z" />
 						<path d="M12.2625 17.9059C12.096 17.9392 11.8962 17.9725 11.6963 17.9725H9.53156V15.4081H11.7296C12.1626 15.4081 12.5289 15.508 12.7954 15.7078C13.0618 15.9409 13.195 16.274 13.195 16.7402C13.195 16.9734 13.1284 17.1732 13.0618 17.3397C12.9619 17.5062 12.862 17.6061 12.7288 17.7061C12.5956 17.806 12.429 17.8726 12.2625 17.9059Z" />
@@ -116,7 +116,7 @@ function Footer() {
 		<h1 className="text-center text-3xl font-bold bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text pt-6 pb-6 lg:pb-8 lg:pt-8 lg:text-5xl">Tell me about your next project</h1>
 
 		{/* email button */}
-		<a href="mailto:jozhou.uxui@gmail.com" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
+		<a href="mailto:jozhou.uxui@gmail.com" target="_blank" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
 			<div className="flex flex-row items-center space-x-3">
 				
 				<svg className="fill-white w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,21 +138,21 @@ function Footer() {
 			
 			{/* links - desktop */}
 			<div className="hidden lg:flex">
-				<a href="https://www.linkedin.com/in/jozhou-uxui/" className="text-xl underline">LinkedIn</a>
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="text-xl underline">LinkedIn</a>
 				<span className="cursor-default px-[15px]">/</span>
-				<a href="https://www.behance.net/iozhou" className="text-xl underline">Behance</a>
+				<a href="https://www.behance.net/iozhou" target="_blank" className="text-xl underline">Behance</a>
 			</div>
 
 			{/* links - mobile */}
 			<div className="flex lg:hidden">
 				
-				<a href="https://www.linkedin.com/in/jozhou-uxui/" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white mr-3">
+				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white mr-3">
 					<svg className="fill-foreground" width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15ZM7.6875 12.4688V22.5H10.875V12.4688H7.6875ZM7.5 9.28125C7.5 10.3125 8.25 11.0625 9.28125 11.0625C10.3125 11.0625 11.0625 10.3125 11.0625 9.28125C11.0625 8.25 10.3125 7.5 9.28125 7.5C8.34375 7.5 7.5 8.25 7.5 9.28125ZM19.3125 22.5H22.3125V16.3125C22.3125 13.2187 20.4375 12.1875 18.6562 12.1875C17.0625 12.1875 15.9375 13.2187 15.6562 13.875V12.4688H12.6562V22.5H15.8437V17.1563C15.8437 15.75 16.7812 15 17.7187 15C18.6562 15 19.3125 15.4688 19.3125 17.0625V22.5Z"/>
 					</svg>
 				</a>
 				
-				<a href="https://www.behance.net/iozhou" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white">
+				<a href="https://www.behance.net/iozhou" target="_blank" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white">
 					<svg className="fill-foreground" width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 						<path d="M12.4956 13.7761C12.2625 13.9427 11.9628 14.0426 11.5964 14.0426H9.53156V11.8778H11.4632C11.663 11.8778 11.8296 11.8778 11.9961 11.9111C12.1626 11.9444 12.2958 12.011 12.429 12.0776C12.5622 12.1775 12.6622 12.2775 12.7288 12.4107C12.7954 12.5439 12.8287 12.7437 12.8287 12.9435C12.8287 13.3099 12.7288 13.6096 12.4956 13.7761Z" />
 						<path d="M12.2625 17.9059C12.096 17.9392 11.8962 17.9725 11.6963 17.9725H9.53156V15.4081H11.7296C12.1626 15.4081 12.5289 15.508 12.7954 15.7078C13.0618 15.9409 13.195 16.274 13.195 16.7402C13.195 16.9734 13.1284 17.1732 13.0618 17.3397C12.9619 17.5062 12.862 17.6061 12.7288 17.7061C12.5956 17.806 12.429 17.8726 12.2625 17.9059Z" />

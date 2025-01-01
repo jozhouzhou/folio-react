@@ -33,7 +33,7 @@ function Hero() {
 			</h1>
 
 			{/* button */}
-			<a href="https://www.behance.net/iozhou" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
+			<a href="https://www.behance.net/iozhou" target="_blank" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
 				<div className="flex flex-row-reverse items-center">
 
 					<svg className="fill-white ml-2 w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
