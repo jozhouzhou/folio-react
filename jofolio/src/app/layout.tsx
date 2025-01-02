@@ -14,6 +14,10 @@ const base_font = Lunasima({
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   	return (
 		<html lang="en">
+			<head>
+				<title>jo.design</title>
+				<link rel="icon" type="image/x-icon" href="/favicon.png" />
+			</head>
 			<body className={base_font.className}>
 				<Providers>
 					
