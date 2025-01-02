@@ -113,7 +113,7 @@ function Footer() {
 		</svg>
 
 		{/* footer title */}
-		<h1 className="text-center text-3xl font-bold bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text pt-6 pb-6 lg:pb-8 lg:pt-8 lg:text-5xl">Tell me about your next project</h1>
+		<h1 className="text-center text-[24px] leading-tight font-bold bg-gradient-to-r from-[#373737]  via-[#373737] via-70% to-[#9D9D9D] text-transparent bg-clip-text pt-6 pb-6 lg:pb-8 lg:pt-8 lg:text-5xl">Tell me about your next <br className="flex lg:hidden"/>project</h1>
 
 		{/* email button */}
 		<a href="mailto:jozhou.uxui@gmail.com" target="_blank" className="cursor-pointer rounded-full bg-foreground border-white border drop-shadow-sm text-white text-[13px] transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:text-foreground [&>*:first-child]:[&>*:first-child]:hover:fill-foreground px-8 py-3 lg:py-4 lg:text-base">
