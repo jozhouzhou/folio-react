@@ -55,7 +55,7 @@ function Navbar() {
 		<div className="flex flex-row justify-between items-center bg-background py-8 px-8 lg:px-36">
 
 			{/* email popup */}
-			<div className={`fixed bottom-5 left-5 rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
+			<div className={`fixed bottom-5 left-[50%] translate-x-[-50%] text-nowrap rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
 				‘jozhou.uxui@gmail.com’ copied to your clipboard
 			</div>
 
@@ -163,7 +163,7 @@ function Footer() {
 			</div>
 
 			{/* email popup */}
-			<div className={`fixed bottom-5 left-5 rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
+			<div className={`fixed bottom-5 left-[50%] translate-x-[-50%] text-nowrap rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
 				‘jozhou.uxui@gmail.com’ copied to your clipboard
 			</div>
 			
