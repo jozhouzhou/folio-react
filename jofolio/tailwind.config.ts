@@ -16,9 +16,16 @@ const config: Config = {
           '0%, 100%': { transform: 'translateY(0) rotate(340deg)' },
           '50%': { transform: 'translateY(-5px) rotate(340deg)' },
         },
+        popup: {
+          '0%': { opacity: '0' },
+          '5%': { opacity: '1' },
+          '70%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
       },
       animation: {
         float: 'float 2s ease-in-out infinite',
+        popup:'popup 4s ease-in-out',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
