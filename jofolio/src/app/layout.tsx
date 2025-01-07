@@ -172,7 +172,7 @@ function Footer() {
 
 			{/* bottom section */}
 			<div className="flex flex-row w-full items-center justify-between text-[13px] px-8 pb-8 lg:px-48 mb-36 lg:pb-0 lg:text-base">
-				<span>2024 All rights reserved.</span>
+				<span>2025 All rights reserved.</span>
 				
 				{/* links - desktop */}
 				<div className="hidden lg:flex">
