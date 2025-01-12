@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .text-hover-shadow {
+    text-shadow: 0 0 0.02px rgb(55, 55, 55);
+  }
+}

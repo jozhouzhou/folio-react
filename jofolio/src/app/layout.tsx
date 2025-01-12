@@ -55,14 +55,14 @@ function Navbar() {
 		<div className="flex flex-row justify-between items-center bg-background py-8 px-8 lg:px-36">
 
 			{/* email popup */}
-			<div className={`fixed bottom-5 left-[50%] translate-x-[-50%] text-nowrap rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
+			<div className={`fixed bottom-5 left-[50%] translate-x-[-50%] text-nowrap cursor-default rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
 				‘jozhou.uxui@gmail.com’ copied to your clipboard
 			</div>
 
 			<div className="flex items-center justify-start lg:space-x-4">
 
 				{/* email */}
-				<div onClick={handleClick} className="cursor-pointer text-lg underline underline-offset-[3px] decoration-1 hidden lg:flex transition duration-250 ease-out hover:text-white">jozhou.uxui@gmail.com</div>
+				<div onClick={handleClick} className="hidden lg:flex cursor-pointer text-lg underline underline-offset-[3px] decoration-1 transition duration-300 ease-out hover:text-[#370505] hover:text-hover-shadow hover:decoration-2">jozhou.uxui@gmail.com</div>
 
 				{/* email button - mobile only */}
 				<div onClick={handleClick} className="cursor-pointer rounded-full text-base bg-foreground border-white border drop-shadow-sm transition duration-250 ease-out hover:bg-white [&>*:first-child]:hover:fill-foreground py-3 px-10 mr-2 lg:m-0 lg:p-0 lg:hidden">
@@ -138,7 +138,7 @@ function Footer() {
 			</div>
 
 			{/* email popup */}
-			<div className={`fixed bottom-5 left-[50%] translate-x-[-50%] text-nowrap rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
+			<div className={`fixed bottom-5 left-[50%] translate-x-[-50%] text-nowrap cursor-default rounded-full py-3 px-6 bg-foreground text-sm text-white opacity-0 ${isAnimating ? 'animate-popup' : ''} `}>
 				‘jozhou.uxui@gmail.com’ copied to your clipboard
 			</div>
 			
@@ -147,6 +147,7 @@ function Footer() {
 
 			{/* bottom section */}
 			<div className="flex flex-row w-full items-center justify-between text-[13px] px-8 pb-8 lg:px-48 mb-36 lg:pb-0 lg:text-base">
+
 				<span>2025 All rights reserved.</span>
 				
 				<Links />
@@ -165,11 +166,11 @@ function Links() {
 
 			{/* desktop */}
 			<div className="hidden lg:flex">
-				<a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank" className="text-lg underline underline-offset-[3px] decoration-1 transition duration-150 ease-out hover:text-white">LinkedIn</a>
+				<div className="cursor-pointer text-lg underline underline-offset-[3px] decoration-1 transition duration-300 ease-out hover:text-[#370505] hover:text-hover-shadow hover:decoration-2"><a href="https://www.linkedin.com/in/jozhou-uxui/" target="_blank">LinkedIn</a></div>
 
 				<span className="text-lg cursor-default px-[15px]">/</span>
 
-				<a href="https://www.behance.net/iozhou" target="_blank" className="text-lg underline underline-offset-[3px] decoration-1 transition duration-150 ease-out hover:text-white">Behance</a>
+				<div className="cursor-pointer text-lg underline underline-offset-[3px] decoration-1 transition duration-300 ease-out hover:text-[#370505] hover:text-hover-shadow hover:decoration-2"><a href="https://www.behance.net/iozhou" target="_blank">Behance</a></div>
 			</div>
 
 			{/* mobile */}

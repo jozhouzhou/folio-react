@@ -42,7 +42,7 @@ const config: Config = {
         'background-50': '#F2F4F6',
         background: '#EBEBEB',
         foreground:'#373737',
-        secondaryRed: '#E94C55',
+        'hover-text': '#EBEBEB',
         secondaryYellow: '#fedc66',
         highlight: '#bccad2',
         primaryText: '#353633',
