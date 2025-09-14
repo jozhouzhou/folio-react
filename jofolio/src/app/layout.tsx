@@ -170,7 +170,7 @@ function Links() {
 
 				<span className="text-lg cursor-default px-[15px]">/</span>
 
-				<div className="cursor-pointer text-lg underline underline-offset-[3px] decoration-1 transition duration-300 ease-out hover:text-[#370505] hover:text-hover-shadow hover:decoration-2"><a href="https://www.behance.net/iozhou" target="_blank">Behance</a></div>
+				<div className="cursor-pointer text-lg underline underline-offset-[3px] decoration-1 transition duration-300 ease-out hover:text-[#370505] hover:text-hover-shadow hover:decoration-2"><a href="https://dribbble.com/j000zhou" target="_blank">Latest Shots</a></div>
 			</div>
 
 			{/* mobile */}
@@ -182,7 +182,7 @@ function Links() {
 					</svg>
 				</a>
 				
-				<a href="https://www.behance.net/iozhou" target="_blank" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white">
+				<a href="https://dribbble.com/j000zhou" target="_blank" className="rounded-full bg-white transition duration-250 ease-out hover:bg-foreground [&>*:first-child]:hover:fill-white">
 					<svg className="fill-foreground" width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 						<path d="M12.4956 13.7761C12.2625 13.9427 11.9628 14.0426 11.5964 14.0426H9.53156V11.8778H11.4632C11.663 11.8778 11.8296 11.8778 11.9961 11.9111C12.1626 11.9444 12.2958 12.011 12.429 12.0776C12.5622 12.1775 12.6622 12.2775 12.7288 12.4107C12.7954 12.5439 12.8287 12.7437 12.8287 12.9435C12.8287 13.3099 12.7288 13.6096 12.4956 13.7761Z" />
 						<path d="M12.2625 17.9059C12.096 17.9392 11.8962 17.9725 11.6963 17.9725H9.53156V15.4081H11.7296C12.1626 15.4081 12.5289 15.508 12.7954 15.7078C13.0618 15.9409 13.195 16.274 13.195 16.7402C13.195 16.9734 13.1284 17.1732 13.0618 17.3397C12.9619 17.5062 12.862 17.6061 12.7288 17.7061C12.5956 17.806 12.429 17.8726 12.2625 17.9059Z" />
